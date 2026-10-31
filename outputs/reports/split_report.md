@@ -1,14 +1,16 @@
 # Laporan Train-Test Split
 
 **Sumber:** `data/processed/data_cleaned.csv`.
-**Metode:** `GroupShuffleSplit(test_size=0.20, random_state=42)`; grup dibentuk dari seluruh empat kolom dataset.
+**Metode:** `GroupShuffleSplit(test_size=0.30, random_state=42)`; grup dibentuk dari seluruh empat kolom dataset untuk mencegah duplikasi identik berada pada kedua split.
+
+**Rasio sasaran:** 70% training dan 30% testing. Karena split menjaga grup duplikat tetap utuh, rasio aktual dihitung dari jumlah baris dan dapat sedikit berbeda dari rasio sasaran.
 
 ## Hasil
 
 - Baris sumber: **152**.
-- Training: **122** baris (80.26%).
-- Testing: **30** baris (19.74%).
-- Grup unik: **150**; grup training: **120**; grup testing: **30**.
+- Training: **107** baris (70.39%).
+- Testing: **45** baris (29.61%).
+- Grup unik: **150**; grup training: **105**; grup testing: **45**.
 - Fitur (X): `Soil Moisture`, `Temperature`, `Usia Tanam`.
 - Target (y): `Volume Penyiraman`; tidak disertakan di X.
 - Grup duplikat identik yang muncul lebih dari sekali: **4 baris dalam 2 grup**.

@@ -110,8 +110,8 @@ def run_training():
         raise ValueError("Target leakage: target is present in X")
     if len(x_train)!=len(y_train) or len(x_test)!=len(y_test):
         raise ValueError("Feature-target row alignment check failed")
-    if len(x_train)!=122 or len(x_test)!=30:
-        raise ValueError(f"Unexpected split sizes: train={len(x_train)}, test={len(x_test)}")
+    if len(x_train) + len(x_test) != 152:
+        raise ValueError(f"Unexpected total split size: train={len(x_train)}, test={len(x_test)}")
 
     # Group duplicates by the complete feature-target record, using training data only.
     complete_train=x_train.copy()
@@ -123,7 +123,7 @@ def run_training():
     xgb_cv=_cv_summary(base_model,x_train,y_train,groups,cv)
     dummy_cv=_cv_summary(dummy_model,x_train,y_train,groups,cv)
 
-    # Final model fit uses all 122 training rows; test set is only evaluated below.
+    # Final model fit uses all training rows; test set is only evaluated below.
     model=XGBRegressor(**PARAMETERS,n_jobs=1,verbosity=0)
     model.fit(x_train,y_train)
     predictions=model.predict(x_test)
@@ -152,7 +152,8 @@ def run_training():
            "## Prosedur", "",
            "- Input: split normalized yang sudah tersedia; scaler tidak di-fit ulang.",
            "- Fitur: Soil Moisture, Temperature, Usia Tanam. Target: Volume Penyiraman (mL), tidak dinormalisasi.",
-           "- Pemeriksaan alignment: 122 pasangan training dan 30 pasangan testing; jumlah baris cocok; target tidak ada di X.",
+           f"- Pemeriksaan alignment: {len(x_train)} pasangan training dan {len(x_test)} pasangan testing; jumlah baris cocok; target tidak ada di X.",
+           "- Pembagian data menggunakan GroupShuffleSplit dengan sasaran 70:30; grup duplikat identik dijaga tetap pada satu split.",
            f"- GroupKFold 5-fold memakai training saja; grup identik berdasarkan seluruh tiga fitur dan target. Jumlah grup training: {groups.nunique()}.",
            f"- Model final di-fit pada seluruh {len(x_train)} baris training; test digunakan sekali untuk evaluasi.",
            "- Tidak ada clipping; prediksi mentah disimpan.", "",

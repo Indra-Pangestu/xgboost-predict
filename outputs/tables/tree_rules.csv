@@ -1,0 +1,873 @@
+﻿Nomor Pohon,Nomor Daun,Kondisi IF,Nilai THEN (kontribusi daun),Cover (jumlah Hessian)
+0,3,Usia Tanam <= 0.028153261200000002 AND Usia Tanam <= -0.88866382799999999,2.1647071800000002,14
+0,4,Usia Tanam <= 0.028153261200000002 AND Usia Tanam > -0.88866382799999999 [termasuk nilai hilang],0.16894531199999999,30
+0,5,Usia Tanam > 0.028153261200000002 [termasuk nilai hilang] AND Temperature <= 1.51768196,-2.1794390699999999,31
+0,6,Usia Tanam > 0.028153261200000002 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],1.2829651799999999,6
+1,3,Usia Tanam <= -0.168307543 AND Temperature <= 0.52985334399999995,1.9030062000000001,27
+1,4,Usia Tanam <= -0.168307543 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.52605360700000003,11
+1,5,Usia Tanam > -0.168307543 [termasuk nilai hilang] AND Usia Tanam <= 1.99276125,-1.89000642,37
+1,6,Usia Tanam > -0.168307543 [termasuk nilai hilang] AND Usia Tanam > 1.99276125 [termasuk nilai hilang],1.4827958299999999,9
+2,3,Soil Moisture <= -0.163337126 AND Soil Moisture <= -0.70488017800000002,6.5988583600000004,17
+2,4,Soil Moisture <= -0.163337126 AND Soil Moisture > -0.70488017800000002 [termasuk nilai hilang],2.2487909799999999,25
+2,5,Soil Moisture > -0.163337126 [termasuk nilai hilang] AND Soil Moisture <= 0.47666832799999997,-0.36839988800000001,24
+2,6,Soil Moisture > -0.163337126 [termasuk nilai hilang] AND Soil Moisture > 0.47666832799999997 [termasuk nilai hilang],-5.0277376199999999,26
+3,3,Soil Moisture <= 0.10743441400000001 AND Soil Moisture <= -0.38487747300000003,4.5198173500000003,27
+3,4,Soil Moisture <= 0.10743441400000001 AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],0.77368176,24
+3,5,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-1.1188205499999999,11
+3,6,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-4.9188823700000004,31
+4,3,Soil Moisture <= -0.0402591489 AND Soil Moisture <= -0.72949582300000004,6.7125639899999996,12
+4,4,Soil Moisture <= -0.0402591489 AND Soil Moisture > -0.72949582300000004 [termasuk nilai hilang],2.1749286699999999,26
+4,5,Soil Moisture > -0.0402591489 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.57163548500000005,17
+4,6,Soil Moisture > -0.0402591489 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-4.8323426200000004,26
+5,3,Temperature <= 1.87047791 AND Temperature <= 1.6235207300000001,-0.10153440399999999,86
+5,4,Temperature <= 1.87047791 AND Temperature > 1.6235207300000001 [termasuk nilai hilang],5.2675509500000004,3
+5,2,Temperature > 1.87047791 [termasuk nilai hilang],-3.0609376400000001,3
+6,3,Soil Moisture <= 0.082818821099999995 AND Soil Moisture <= -0.45872425999999999,4.7108621599999996,24
+6,4,Soil Moisture <= 0.082818821099999995 AND Soil Moisture > -0.45872425999999999 [termasuk nilai hilang],0.62381458300000003,20
+6,5,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-1.0374474499999999,11
+6,6,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-4.6150383899999996,28
+7,3,Soil Moisture <= -0.163337126 AND Soil Moisture <= -0.85257375199999996,6.6449446700000001,12
+7,4,Soil Moisture <= -0.163337126 AND Soil Moisture > -0.85257375199999996 [termasuk nilai hilang],1.98366964,22
+7,5,Soil Moisture > -0.163337126 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.59696286899999995,23
+7,6,Soil Moisture > -0.163337126 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-4.74375868,31
+8,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -0.72949582300000004,6.2703471200000003,14
+8,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -0.72949582300000004 [termasuk nilai hilang],2.1399631499999998,23
+8,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 0.47666832799999997,-0.34016400600000002,22
+8,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 0.47666832799999997 [termasuk nilai hilang],-4.1799154300000003,29
+9,3,Soil Moisture <= 0.082818821099999995 AND Soil Moisture <= -0.72949582300000004,6.2512416799999997,16
+9,4,Soil Moisture <= 0.082818821099999995 AND Soil Moisture > -0.72949582300000004 [termasuk nilai hilang],1.5584346099999999,36
+9,5,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.78822904800000004,8
+9,6,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-4.7780275300000001,26
+10,3,Soil Moisture <= -0.163337126 AND Soil Moisture <= -0.85257375199999996,6.0506157900000002,13
+10,4,Soil Moisture <= -0.163337126 AND Soil Moisture > -0.85257375199999996 [termasuk nilai hilang],1.92314637,20
+10,5,Soil Moisture > -0.163337126 [termasuk nilai hilang] AND Soil Moisture <= 0.57513070099999997,-0.688650608,24
+10,6,Soil Moisture > -0.163337126 [termasuk nilai hilang] AND Soil Moisture > 0.57513070099999997 [termasuk nilai hilang],-4.6943068500000003,26
+11,3,Usia Tanam <= 0.81399649399999996 AND Temperature <= 0.52985334399999995,0.55429780500000003,59
+11,4,Usia Tanam <= 0.81399649399999996 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-1.1959712499999999,15
+11,2,Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-2.9471874200000001,8
+12,3,Soil Moisture <= -0.015643555699999999 AND Soil Moisture <= -0.55718666299999997,4.7587766599999997,24
+12,4,Soil Moisture <= -0.015643555699999999 AND Soil Moisture > -0.55718666299999997 [termasuk nilai hilang],0.93137359600000003,18
+12,5,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture <= 0.69820868999999997,-1.15299964,23
+12,6,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture > 0.69820868999999997 [termasuk nilai hilang],-4.6526131599999996,23
+13,3,Usia Tanam <= -0.102820605 AND Usia Tanam <= -0.69220304499999996,-0.069131024200000002,24
+13,4,Usia Tanam <= -0.102820605 AND Usia Tanam > -0.69220304499999996 [termasuk nilai hilang],1.09204495,21
+13,5,Usia Tanam > -0.102820605 [termasuk nilai hilang] AND Temperature <= -0.91661000299999995,-0.224934995,9
+13,6,Usia Tanam > -0.102820605 [termasuk nilai hilang] AND Temperature > -0.91661000299999995 [termasuk nilai hilang],-1.96207416,31
+14,3,Soil Moisture <= -0.015643555699999999 AND Soil Moisture <= -0.70488017800000002,5.6723241800000004,14
+14,4,Soil Moisture <= -0.015643555699999999 AND Soil Moisture > -0.70488017800000002 [termasuk nilai hilang],1.5533759599999999,31
+14,5,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.7536786799999999,31
+14,6,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-5.0137915599999996,12
+15,3,Soil Moisture <= 0.10743441400000001 AND Soil Moisture <= -0.70488017800000002,5.5819006,15
+15,4,Soil Moisture <= 0.10743441400000001 AND Soil Moisture > -0.70488017800000002 [termasuk nilai hilang],1.31776786,37
+15,5,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.7710832400000001,23
+15,6,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-5.08103704,17
+16,3,Soil Moisture <= -0.089490339200000005 AND Soil Moisture <= -0.92642056900000003,5.8243913699999998,13
+16,4,Soil Moisture <= -0.089490339200000005 AND Soil Moisture > -0.92642056900000003 [termasuk nilai hilang],1.84616983,28
+16,5,Soil Moisture > -0.089490339200000005 [termasuk nilai hilang] AND Soil Moisture <= 0.35359036900000002,-0.23924219599999999,16
+16,6,Soil Moisture > -0.089490339200000005 [termasuk nilai hilang] AND Soil Moisture > 0.35359036900000002 [termasuk nilai hilang],-3.71599221,32
+17,3,Soil Moisture <= -0.089490339200000005 AND Soil Moisture <= -0.72949582300000004,5.1239070900000003,13
+17,4,Soil Moisture <= -0.089490339200000005 AND Soil Moisture > -0.72949582300000004 [termasuk nilai hilang],1.7456250200000001,24
+17,5,Soil Moisture > -0.089490339200000005 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.53608751300000002,21
+17,6,Soil Moisture > -0.089490339200000005 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-3.7579085800000001,28
+18,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -0.95103615500000005,5.7526555100000003,9
+18,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -0.95103615500000005 [termasuk nilai hilang],1.8242081400000001,23
+18,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 0.47666832799999997,-0.30864638100000003,22
+18,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 0.47666832799999997 [termasuk nilai hilang],-3.54695201,32
+19,3,Temperature <= 1.51768196 AND Usia Tanam <= 0.028153261200000002,0.51127219199999996,46
+19,4,Temperature <= 1.51768196 AND Usia Tanam > 0.028153261200000002 [termasuk nilai hilang],-1.2726290200000001,33
+19,5,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature <= 1.87047791,4.5578484499999998,4
+19,6,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-1.8084420000000001,4
+20,3,Soil Moisture <= -0.237183914 AND Soil Moisture <= -1.04949856,5.8062915799999999,10
+20,4,Soil Moisture <= -0.237183914 AND Soil Moisture > -1.04949856 [termasuk nilai hilang],2.0908258000000002,23
+20,5,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture <= 0.47666832799999997,-0.167763203,26
+20,6,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture > 0.47666832799999997 [termasuk nilai hilang],-3.5575602100000001,26
+21,3,Usia Tanam <= -0.102820605 AND Temperature <= 0.42401453900000002,1.0272222799999999,31
+21,4,Usia Tanam <= -0.102820605 AND Temperature > 0.42401453900000002 [termasuk nilai hilang],-0.075376167899999999,11
+21,5,Usia Tanam > -0.102820605 [termasuk nilai hilang] AND Usia Tanam <= 1.99276125,-1.3411204800000001,33
+21,6,Usia Tanam > -0.102820605 [termasuk nilai hilang] AND Usia Tanam > 1.99276125 [termasuk nilai hilang],1.0544830599999999,11
+22,3,Soil Moisture <= -0.21256831300000001 AND Soil Moisture <= -1.1479609,5.7812709800000004,9
+22,4,Soil Moisture <= -0.21256831300000001 AND Soil Moisture > -1.1479609 [termasuk nilai hilang],1.9814808399999999,26
+22,5,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,-0.16645412100000001,18
+22,6,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-3.0664160300000001,31
+23,3,Soil Moisture <= 0.132050008 AND Soil Moisture <= -0.38487747300000003,3.1673130999999999,24
+23,4,Soil Moisture <= 0.132050008 AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],0.39058741899999999,19
+23,5,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.33690274,25
+23,6,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-4.4375424399999996,15
+24,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -0.95103615500000005,5.2855405800000002,11
+24,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -0.95103615500000005 [termasuk nilai hilang],1.67438745,24
+24,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.07943571,39
+24,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-4.3458719300000004,15
+25,3,Soil Moisture <= -0.21256831300000001 AND Soil Moisture <= -1.1479609,5.4290375700000002,7
+25,4,Soil Moisture <= -0.21256831300000001 AND Soil Moisture > -1.1479609 [termasuk nilai hilang],1.89376521,25
+25,5,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.86925017800000004,42
+25,6,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-4.2350320799999999,13
+26,3,Soil Moisture <= -0.21256831300000001 AND Soil Moisture <= -1.04949856,5.29786015,10
+26,4,Soil Moisture <= -0.21256831300000001 AND Soil Moisture > -1.04949856 [termasuk nilai hilang],1.7537699899999999,27
+26,5,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.84522575099999997,42
+26,6,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-4.2604074499999998,15
+27,3,Soil Moisture <= 0.23051239600000001 AND Soil Moisture <= -0.38487747300000003,2.5969247800000002,26
+27,4,Soil Moisture <= 0.23051239600000001 AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],0.28740319600000003,26
+27,5,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.5204654900000001,17
+27,6,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-4.02638388,13
+28,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 2.1237351900000001,-0.50562035999999999,79
+28,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 2.1237351900000001 [termasuk nilai hilang],0.78886765199999997,3
+28,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],2.2942662199999999,4
+29,3,Soil Moisture <= 0.082818821099999995 AND Soil Moisture <= -0.95103615500000005,5.14090633,8
+29,4,Soil Moisture <= 0.082818821099999995 AND Soil Moisture > -0.95103615500000005 [termasuk nilai hilang],1.2148874999999999,39
+29,5,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.2676129300000001,28
+29,6,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.9721190900000001,15
+30,3,Soil Moisture <= 0.10743441400000001 AND Soil Moisture <= -0.38487747300000003,2.54536724,25
+30,4,Soil Moisture <= 0.10743441400000001 AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],0.39886930599999998,22
+30,5,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.3312782000000001,27
+30,6,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.6953666200000002,13
+31,3,Soil Moisture <= 0.132050008 AND Soil Moisture <= -0.38487747300000003,2.7095747000000001,25
+31,4,Soil Moisture <= 0.132050008 AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],0.35117006299999998,25
+31,5,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.32522476,26
+31,6,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.5520572700000002,14
+32,3,Soil Moisture <= 0.23051239600000001 AND Soil Moisture <= -0.45872425999999999,2.3180973499999999,24
+32,4,Soil Moisture <= 0.23051239600000001 AND Soil Moisture > -0.45872425999999999 [termasuk nilai hilang],0.21271617700000001,24
+32,5,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.36396205,19
+32,6,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.69725394,16
+33,3,Temperature <= 1.51768196 AND Usia Tanam <= 0.028153261200000002,0.28458315099999998,45
+33,4,Temperature <= 1.51768196 AND Usia Tanam > 0.028153261200000002 [termasuk nilai hilang],-0.61394292100000003,37
+33,5,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature <= 1.87047791,4.3026323299999998,3
+33,6,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-1.48034048,4
+34,3,Temperature <= 1.79991865 AND Usia Tanam <= 1.99276125,-0.213561907,81
+34,4,Temperature <= 1.79991865 AND Usia Tanam > 1.99276125 [termasuk nilai hilang],3.2335934599999998,5
+34,2,Temperature > 1.79991865 [termasuk nilai hilang],-1.94116282,3
+35,3,Soil Moisture <= -0.237183914 AND Soil Moisture <= -1.04949856,4.47336578,10
+35,4,Soil Moisture <= -0.237183914 AND Soil Moisture > -1.04949856 [termasuk nilai hilang],1.5622911500000001,23
+35,5,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture <= 0.62436187300000001,-0.184186831,30
+35,6,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture > 0.62436187300000001 [termasuk nilai hilang],-2.8413634299999999,22
+36,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -1.1971920700000001,5.0242590900000001,7
+36,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -1.1971920700000001 [termasuk nilai hilang],1.5057966700000001,31
+36,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.63674843299999995,34
+36,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.4080722300000001,13
+37,3,Soil Moisture <= -0.237183914 AND Soil Moisture <= -1.36950123,5.4658608400000004,4
+37,4,Soil Moisture <= -0.237183914 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],1.6720997099999999,23
+37,5,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.12209995799999999,27
+37,6,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-2.60073686,28
+38,3,Soil Moisture <= 0.23051239600000001 AND Soil Moisture <= -0.50795543200000004,2.4999547,25
+38,4,Soil Moisture <= 0.23051239600000001 AND Soil Moisture > -0.50795543200000004 [termasuk nilai hilang],0.30719748099999999,32
+38,5,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture <= 0.77205544699999995,-1.18287611,15
+38,6,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture > 0.77205544699999995 [termasuk nilai hilang],-3.2525906600000001,20
+39,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -1.1971920700000001,4.6613540599999999,8
+39,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -1.1971920700000001 [termasuk nilai hilang],1.5067656,33
+39,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.68654638499999998,37
+39,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.1439535599999999,13
+40,3,Soil Moisture <= 0.18128119400000001 AND Soil Moisture <= -0.50795543200000004,2.3086888800000001,22
+40,4,Soil Moisture <= 0.18128119400000001 AND Soil Moisture > -0.50795543200000004 [termasuk nilai hilang],0.36980289199999999,28
+40,5,Soil Moisture > 0.18128119400000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-1.16748977,25
+40,6,Soil Moisture > 0.18128119400000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.2382280799999998,14
+41,3,Soil Moisture <= 0.132050008 AND Soil Moisture <= -0.50795543200000004,2.2136278200000001,25
+41,4,Soil Moisture <= 0.132050008 AND Soil Moisture > -0.50795543200000004 [termasuk nilai hilang],0.26241207100000002,21
+41,5,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.97341358700000002,25
+41,6,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.04435301,13
+42,3,Usia Tanam <= -0.102820605 AND Temperature <= 0.52985334399999995,0.50552552900000003,34
+42,4,Usia Tanam <= -0.102820605 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.39022365199999998,13
+42,5,Usia Tanam > -0.102820605 [termasuk nilai hilang] AND Temperature <= 1.51768196,-0.35208535200000002,36
+42,6,Usia Tanam > -0.102820605 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-1.5412300800000001,6
+43,3,Soil Moisture <= 0.10743441400000001 AND Soil Moisture <= -0.45872425999999999,2.1393699599999998,26
+43,4,Soil Moisture <= 0.10743441400000001 AND Soil Moisture > -0.45872425999999999 [termasuk nilai hilang],0.43248826299999998,21
+43,5,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.96089422700000005,23
+43,6,Soil Moisture > 0.10743441400000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-2.9967508299999999,14
+44,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -1.3202700599999999,4.6472778300000002,4
+44,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -1.3202700599999999 [termasuk nilai hilang],1.4550854,35
+44,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.63218486299999999,40
+44,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-3.01812887,13
+45,3,Soil Moisture <= -0.237183914 AND Soil Moisture <= -1.29565442,4.8647995000000002,6
+45,4,Soil Moisture <= -0.237183914 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],1.44588172,27
+45,5,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,0.0080030271800000004,20
+45,6,Soil Moisture > -0.237183914 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-2.0745468100000002,34
+46,3,Usia Tanam <= 2.25470901 AND Usia Tanam <= 0.81399649399999996,-0.10920118500000001,77
+46,4,Usia Tanam <= 2.25470901 AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-1.4430249900000001,7
+46,2,Usia Tanam > 2.25470901 [termasuk nilai hilang],0.86019378899999999,4
+47,3,Soil Moisture <= -0.38487747300000003 AND Soil Moisture <= -1.29565442,4.7964658699999996,5
+47,4,Soil Moisture <= -0.38487747300000003 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],1.5006220299999999,20
+47,5,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,0.117819086,24
+47,6,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-1.8826093699999999,30
+48,3,Soil Moisture <= -0.38487747300000003 AND Soil Moisture <= -1.29565442,4.7245192500000002,5
+48,4,Soil Moisture <= -0.38487747300000003 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],1.4772812099999999,21
+48,5,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.0125149367,32
+48,6,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-2.2698729000000002,30
+49,3,Soil Moisture <= 0.132050008 AND Soil Moisture <= -0.45872425999999999,2.0367009600000001,26
+49,4,Soil Moisture <= 0.132050008 AND Soil Moisture > -0.45872425999999999 [termasuk nilai hilang],0.29392832499999999,24
+49,5,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.95641207699999997,26
+49,6,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.80894208,14
+50,3,Usia Tanam <= 0.87948340199999997 AND Usia Tanam <= -0.168307543,0.37286791200000002,43
+50,4,Usia Tanam <= 0.87948340199999997 AND Usia Tanam > -0.168307543 [termasuk nilai hilang],-0.49438452700000002,38
+50,5,Usia Tanam > 0.87948340199999997 [termasuk nilai hilang] AND Temperature <= 1.79991865,3.4534103900000002,5
+50,6,Usia Tanam > 0.87948340199999997 [termasuk nilai hilang] AND Temperature > 1.79991865 [termasuk nilai hilang],-1.4742249300000001,3
+51,3,Soil Moisture <= -0.21256831300000001 AND Soil Moisture <= -1.36950123,4.9781870799999997,3
+51,4,Soil Moisture <= -0.21256831300000001 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],1.2977130400000001,33
+51,5,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.54333913300000003,34
+51,6,Soil Moisture > -0.21256831300000001 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-2.69746256,14
+52,3,Soil Moisture <= 0.082818821099999995 AND Soil Moisture <= -1.29565442,4.5490360299999999,5
+52,4,Soil Moisture <= 0.082818821099999995 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],0.95669090700000003,43
+52,5,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture <= 0.74743986100000004,-0.68198239800000005,17
+52,6,Soil Moisture > 0.082818821099999995 [termasuk nilai hilang] AND Soil Moisture > 0.74743986100000004 [termasuk nilai hilang],-2.6116578600000002,16
+53,3,Soil Moisture <= -0.38487747300000003 AND Soil Moisture <= -1.29565442,4.1211605100000002,5
+53,4,Soil Moisture <= -0.38487747300000003 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],1.36152351,18
+53,5,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,0.015339449,34
+53,6,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-1.9779933700000001,29
+54,3,Soil Moisture <= -0.50795543200000004 AND Soil Moisture <= -1.4187323999999999,4.97151327,3
+54,4,Soil Moisture <= -0.50795543200000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.46716237,17
+54,5,Soil Moisture > -0.50795543200000004 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,0.0450868122,32
+54,6,Soil Moisture > -0.50795543200000004 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-2.0534348499999999,28
+55,3,Soil Moisture <= -0.50795543200000004 AND Soil Moisture <= -1.4187323999999999,4.9155840900000003,3
+55,4,Soil Moisture <= -0.50795543200000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.4791919,21
+55,5,Soil Moisture > -0.50795543200000004 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,0.13979159299999999,33
+55,6,Soil Moisture > -0.50795543200000004 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-1.7237247200000001,33
+56,3,Soil Moisture <= 0.23051239600000001 AND Soil Moisture <= -0.55718666299999997,1.7484099900000001,24
+56,4,Soil Moisture <= 0.23051239600000001 AND Soil Moisture > -0.55718666299999997 [termasuk nilai hilang],0.268640816,31
+56,5,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.84955120100000003,22
+56,6,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.5722341499999999,14
+57,3,Soil Moisture <= -0.45872425999999999 AND Soil Moisture <= -1.29565442,4.1031851799999997,4
+57,4,Soil Moisture <= -0.45872425999999999 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],1.1964676400000001,20
+57,5,Soil Moisture > -0.45872425999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,0.12634933000000001,31
+57,6,Soil Moisture > -0.45872425999999999 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-1.4276077700000001,29
+58,3,Usia Tanam <= 2.25470901 AND Usia Tanam <= 0.81399649399999996,0.090742856299999994,77
+58,4,Usia Tanam <= 2.25470901 AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.92285621200000001,7
+58,2,Usia Tanam > 2.25470901 [termasuk nilai hilang],0.70294177499999999,4
+59,3,Soil Moisture <= -0.015643555699999999 AND Soil Moisture <= -1.04949856,3.3442990799999999,9
+59,4,Soil Moisture <= -0.015643555699999999 AND Soil Moisture > -1.04949856 [termasuk nilai hilang],0.71560490099999996,37
+59,5,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.61901474000000001,26
+59,6,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.4974050499999998,14
+60,3,Temperature <= 1.6235207300000001 AND Temperature <= 1.1296063700000001,0.028170337899999998,78
+60,4,Temperature <= 1.6235207300000001 AND Temperature > 1.1296063700000001 [termasuk nilai hilang],-0.538389385,10
+60,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],2.3923652199999998,5
+61,3,Soil Moisture <= -0.63103342100000004 AND Soil Moisture <= -1.36950123,4.6272883399999998,3
+61,4,Soil Moisture <= -0.63103342100000004 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],1.3020586999999999,11
+61,5,Soil Moisture > -0.63103342100000004 [termasuk nilai hilang] AND Soil Moisture <= 0.23051239600000001,0.31619113700000001,35
+61,6,Soil Moisture > -0.63103342100000004 [termasuk nilai hilang] AND Soil Moisture > 0.23051239600000001 [termasuk nilai hilang],-1.3534505400000001,31
+62,3,Soil Moisture <= -0.38487747300000003 AND Soil Moisture <= -1.36950123,4.12797737,3
+62,4,Soil Moisture <= -0.38487747300000003 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],1.2552058699999999,20
+62,5,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.23533546899999999,48
+62,6,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.5383501100000001,14
+63,3,Soil Moisture <= -0.015643555699999999 AND Soil Moisture <= -1.4187323999999999,4.64963484,3
+63,4,Soil Moisture <= -0.015643555699999999 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],0.87139475300000002,37
+63,5,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture <= 0.91974902199999997,-0.63544535599999996,23
+63,6,Soil Moisture > -0.015643555699999999 [termasuk nilai hilang] AND Soil Moisture > 0.91974902199999997 [termasuk nilai hilang],-2.3696119800000002,19
+64,3,Soil Moisture <= -0.55718666299999997 AND Soil Moisture <= -1.4187323999999999,4.5973258000000001,3
+64,4,Soil Moisture <= -0.55718666299999997 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.2808561300000001,20
+64,5,Soil Moisture > -0.55718666299999997 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.13811884799999999,48
+64,6,Soil Moisture > -0.55718666299999997 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.24618268,13
+65,3,Soil Moisture <= -0.85257375199999996 AND Soil Moisture <= -1.4187323999999999,4.5456056599999997,3
+65,4,Soil Moisture <= -0.85257375199999996 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.2801179899999999,10
+65,5,Soil Moisture > -0.85257375199999996 [termasuk nilai hilang] AND Soil Moisture <= 0.23051239600000001,0.33522683399999997,34
+65,6,Soil Moisture > -0.85257375199999996 [termasuk nilai hilang] AND Soil Moisture > 0.23051239600000001 [termasuk nilai hilang],-1.2869280599999999,34
+66,3,Soil Moisture <= -0.0402591489 AND Soil Moisture <= -1.4187323999999999,4.4944672600000004,3
+66,4,Soil Moisture <= -0.0402591489 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.0050092900000001,41
+66,5,Soil Moisture > -0.0402591489 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.49438527199999999,35
+66,6,Soil Moisture > -0.0402591489 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.0746617299999999,13
+67,3,Soil Moisture <= 0.23051239600000001 AND Soil Moisture <= -0.58180224899999999,1.46461606,19
+67,4,Soil Moisture <= 0.23051239600000001 AND Soil Moisture > -0.58180224899999999 [termasuk nilai hilang],0.24143937200000001,30
+67,5,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.60155123499999996,17
+67,6,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-2.2388322399999998,11
+68,3,Usia Tanam <= 1.99276125 AND Usia Tanam <= 0.093640193299999994,-0.0174554866,54
+68,4,Usia Tanam <= 1.99276125 AND Usia Tanam > 0.093640193299999994 [termasuk nilai hilang],-0.38160100600000002,30
+68,5,Usia Tanam > 1.99276125 [termasuk nilai hilang] AND Temperature <= 1.79991865,3.2167177200000001,5
+68,6,Usia Tanam > 1.99276125 [termasuk nilai hilang] AND Temperature > 1.79991865 [termasuk nilai hilang],-0.73500072999999999,3
+69,3,Soil Moisture <= 0.132050008 AND Soil Moisture <= -1.29565442,3.67235303,4
+69,4,Soil Moisture <= 0.132050008 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],0.60506087500000005,46
+69,5,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture <= 0.77205544699999995,-0.506908476,18
+69,6,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture > 0.77205544699999995 [termasuk nilai hilang],-2.0370476200000001,21
+70,3,Temperature <= 1.6235207300000001 AND Temperature <= 1.1296063700000001,-0.018123529900000001,79
+70,4,Temperature <= 1.6235207300000001 AND Temperature > 1.1296063700000001 [termasuk nilai hilang],-0.54914212200000001,8
+70,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],2.4488379999999998,5
+71,3,Temperature <= 0.42401453900000002 AND Usia Tanam <= 0.42107486700000002,0.25735050399999998,42
+71,4,Temperature <= 0.42401453900000002 AND Usia Tanam > 0.42107486700000002 [termasuk nilai hilang],-0.382217109,13
+71,5,Temperature > 0.42401453900000002 [termasuk nilai hilang] AND Usia Tanam <= 2.25470901,-0.54988956499999997,25
+71,6,Temperature > 0.42401453900000002 [termasuk nilai hilang] AND Usia Tanam > 2.25470901 [termasuk nilai hilang],0.47913044700000001,3
+72,3,Temperature <= 1.51768196 AND Temperature <= -1.3046854699999999,-0.37448716199999998,9
+72,4,Temperature <= 1.51768196 AND Temperature > -1.3046854699999999 [termasuk nilai hilang],0.15754248200000001,67
+72,5,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature <= 1.87047791,3.51657939,3
+72,6,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.86293393399999996,4
+73,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.052913267200000003,61
+73,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.37075150000000001,21
+73,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],2.4755017800000001,4
+74,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 1.99276125,-0.14054620300000001,77
+74,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 1.99276125 [termasuk nilai hilang],0.45187410700000002,5
+74,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],2.5089874299999999,5
+75,3,Soil Moisture <= -0.63103342100000004 AND Soil Moisture <= -1.4187323999999999,4.31927109,3
+75,4,Soil Moisture <= -0.63103342100000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.19324195,17
+75,5,Soil Moisture > -0.63103342100000004 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,-0.087028078699999997,56
+75,6,Soil Moisture > -0.63103342100000004 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-2.1618876500000002,14
+76,3,Soil Moisture <= -0.72949582300000004 AND Soil Moisture <= -1.4187323999999999,4.2706790000000003,3
+76,4,Soil Moisture <= -0.72949582300000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.12321746,11
+76,5,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.069440670299999993,54
+76,6,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-2.0949895399999998,15
+77,3,Soil Moisture <= -0.38487747300000003 AND Soil Moisture <= -1.4187323999999999,4.2226333599999997,3
+77,4,Soil Moisture <= -0.38487747300000003 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.0227663499999999,26
+77,5,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.22457803800000001,47
+77,6,Soil Moisture > -0.38487747300000003 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-2.0391247300000002,11
+78,3,Soil Moisture <= -0.360261887 AND Soil Moisture <= -1.36950123,3.7080867300000002,3
+78,4,Soil Moisture <= -0.360261887 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.97565400599999996,25
+78,5,Soil Moisture > -0.360261887 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.26109424199999998,55
+78,6,Soil Moisture > -0.360261887 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.96331429,10
+79,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.083266228400000003,61
+79,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.52149319599999999,18
+79,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,3.3452169899999999,3
+79,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.84570223099999997,4
+80,3,Soil Moisture <= -0.72949582300000004 AND Soil Moisture <= -1.29565442,3.7088315500000002,3
+80,4,Soil Moisture <= -0.72949582300000004 AND Soil Moisture > -1.29565442 [termasuk nilai hilang],0.95428460800000003,9
+80,5,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture <= 0.25512799600000002,0.29123750300000001,39
+80,6,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture > 0.25512799600000002 [termasuk nilai hilang],-1.33022285,30
+81,3,Soil Moisture <= -0.58180224899999999 AND Soil Moisture <= -1.36950123,3.61147785,3
+81,4,Soil Moisture <= -0.58180224899999999 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.97669059000000003,19
+81,5,Soil Moisture > -0.58180224899999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.13360071200000001,51
+81,6,Soil Moisture > -0.58180224899999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.8779066799999999,9
+82,3,Soil Moisture <= 0.23051239600000001 AND Soil Moisture <= -0.55718666299999997,1.1069762700000001,20
+82,4,Soil Moisture <= 0.23051239600000001 AND Soil Moisture > -0.55718666299999997 [termasuk nilai hilang],0.14759714900000001,28
+82,5,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.54731309400000006,22
+82,6,Soil Moisture > 0.23051239600000001 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-2.03888106,11
+83,3,Soil Moisture <= -0.63103342100000004 AND Soil Moisture <= -1.4187323999999999,4.0277056699999996,3
+83,4,Soil Moisture <= -0.63103342100000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],1.0036007199999999,16
+83,5,Soil Moisture > -0.63103342100000004 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.115647338,58
+83,6,Soil Moisture > -0.63103342100000004 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.99972248,13
+84,1,Soil Moisture <= -1.4187323999999999,3.98239374,3
+84,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.62436187300000001,0.37850999800000001,63
+84,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.62436187300000001 [termasuk nilai hilang],-1.3095862899999999,24
+85,3,Usia Tanam <= 1.99276125 AND Usia Tanam <= -0.102820605,-0.038779493399999997,40
+85,4,Usia Tanam <= 1.99276125 AND Usia Tanam > -0.102820605 [termasuk nilai hilang],-0.26215791700000002,37
+85,5,Usia Tanam > 1.99276125 [termasuk nilai hilang] AND Temperature <= 1.79991865,2.9174058399999998,5
+85,6,Usia Tanam > 1.99276125 [termasuk nilai hilang] AND Temperature > 1.79991865 [termasuk nilai hilang],-0.76138639500000005,4
+86,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.093640193299999994,0.100849837,44
+86,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.093640193299999994 [termasuk nilai hilang],-0.37175813299999999,29
+86,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],2.6428318000000002,4
+87,3,Soil Moisture <= -0.50795543200000004 AND Soil Moisture <= -1.4187323999999999,3.9069616800000002,3
+87,4,Soil Moisture <= -0.50795543200000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],0.91304665799999996,25
+87,5,Soil Moisture > -0.50795543200000004 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,-0.194155842,46
+87,6,Soil Moisture > -0.50795543200000004 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-1.7324683700000001,12
+88,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.112769753,66
+88,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.297689021,22
+88,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.90611434,5
+89,1,Soil Moisture <= -1.4187323999999999,3.8565535500000001,3
+89,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.23051239600000001,0.487220019,48
+89,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.23051239600000001 [termasuk nilai hilang],-1.07911801,29
+90,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.14177779900000001,0.025302503300000001,47
+90,4,Temperature <= 1.6235207300000001 AND Temperature > 0.14177779900000001 [termasuk nilai hilang],-0.36040085599999999,32
+90,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,3.1188631099999999,3
+90,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.78843897600000001,4
+91,1,Soil Moisture <= -1.4187323999999999,3.80272794,3
+91,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.18128119400000001,0.46442207699999999,45
+91,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.18128119400000001 [termasuk nilai hilang],-0.93261826000000003,32
+92,3,Soil Moisture <= 1.01821136 AND Soil Moisture <= -0.55718666299999997,0.97776830199999998,20
+92,4,Soil Moisture <= 1.01821136 AND Soil Moisture > -0.55718666299999997 [termasuk nilai hilang],0.016733802900000001,46
+92,5,Soil Moisture > 1.01821136 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.36454922000000001,4
+92,6,Soil Moisture > 1.01821136 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.5264995100000001,9
+93,3,Soil Moisture <= -0.72949582300000004 AND Soil Moisture <= -1.4187323999999999,3.7489471399999998,3
+93,4,Soil Moisture <= -0.72949582300000004 AND Soil Moisture > -1.4187323999999999 [termasuk nilai hilang],0.93079119899999996,12
+93,5,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,0.0082755815200000003,62
+93,6,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-1.55915403,13
+94,1,Soil Moisture <= -1.4187323999999999,3.7067711399999999,3
+94,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.06744266,0.17805468999999999,68
+94,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.06744266 [termasuk nilai hilang],-1.6671512100000001,13
+95,1,Soil Moisture <= -1.36950123,3.7167258300000001,3
+95,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,0.214603826,69
+95,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-1.5532022700000001,14
+96,3,Soil Moisture <= -0.360261887 AND Soil Moisture <= -1.36950123,3.2453110199999999,3
+96,4,Soil Moisture <= -0.360261887 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.78499913200000004,26
+96,5,Soil Moisture > -0.360261887 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.19050534099999999,50
+96,6,Soil Moisture > -0.360261887 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.6696616399999999,11
+97,1,Soil Moisture <= -1.4187323999999999,3.5867469299999999,3
+97,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.23051239600000001,0.47233483199999998,50
+97,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.23051239600000001 [termasuk nilai hilang],-1.0252878700000001,38
+98,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.42401453900000002,0.048569861800000003,58
+98,4,Temperature <= 1.6235207300000001 AND Temperature > 0.42401453900000002 [termasuk nilai hilang],-0.45156621899999999,20
+98,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.9788813599999999,3
+98,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.424257249,3
+99,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.88866382799999999,0.16280262200000001,16
+99,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.88866382799999999 [termasuk nilai hilang],-0.13052018000000001,67
+99,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 2.2938330200000001,2.50030828,3
+99,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 2.2938330200000001 [termasuk nilai hilang],-0.41948437700000002,3
+100,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.0325028859,68
+100,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.269857138,21
+100,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],3.1390149599999999,3
+101,3,Soil Moisture <= 0.25512799600000002 AND Soil Moisture <= -0.21256831300000001,0.65458440799999995,31
+101,4,Soil Moisture <= 0.25512799600000002 AND Soil Moisture > -0.21256831300000001 [termasuk nilai hilang],-0.085129611199999997,20
+101,5,Soil Moisture > 0.25512799600000002 [termasuk nilai hilang] AND Soil Moisture <= 0.77205544699999995,-0.40265777699999999,11
+101,6,Soil Moisture > 0.25512799600000002 [termasuk nilai hilang] AND Soil Moisture > 0.77205544699999995 [termasuk nilai hilang],-1.39635789,18
+102,1,Soil Moisture <= -1.4187323999999999,3.50899363,3
+102,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.603583694,34
+102,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.70949542499999996,50
+103,1,Soil Moisture <= -1.4187323999999999,3.4695177099999999,3
+103,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.23051239600000001,0.44183510500000001,47
+103,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.23051239600000001 [termasuk nilai hilang],-0.82805210399999996,35
+104,3,Soil Moisture <= 0.132050008 AND Soil Moisture <= -0.45872425999999999,0.83278602400000001,25
+104,4,Soil Moisture <= 0.132050008 AND Soil Moisture > -0.45872425999999999 [termasuk nilai hilang],0.105677761,22
+104,5,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,-0.36262136699999997,26
+104,6,Soil Moisture > 0.132050008 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.4531165399999999,9
+105,1,Soil Moisture <= -1.29565442,3.0404503300000001,4
+105,3,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Soil Moisture <= 0.47666832799999997,0.27365282200000002,54
+105,4,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Soil Moisture > 0.47666832799999997 [termasuk nilai hilang],-1.0532149099999999,26
+106,3,Temperature <= 1.6235207300000001 AND Temperature <= 1.1296063700000001,-0.033673726000000001,73
+106,4,Temperature <= 1.6235207300000001 AND Temperature > 1.1296063700000001 [termasuk nilai hilang],-0.27524611399999999,10
+106,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.82815409,3
+106,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.68421411499999996,4
+107,3,Temperature <= 1.51768196 AND Temperature <= 0.318175763,-0.17892596099999999,52
+107,4,Temperature <= 1.51768196 AND Temperature > 0.318175763 [termasuk nilai hilang],0.084304958599999993,27
+107,2,Temperature > 1.51768196 [termasuk nilai hilang],-0.70587223799999999,8
+108,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,-0.0105998777,63
+108,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.29213860600000002,20
+108,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.5536074600000001,5
+109,3,Temperature <= 1.51768196 AND Temperature <= -0.140458941,-0.081669494499999995,43
+109,4,Temperature <= 1.51768196 AND Temperature > -0.140458941 [termasuk nilai hilang],0.151545122,38
+109,5,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature <= 1.79991865,2.8229484600000001,3
+109,6,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature > 1.79991865 [termasuk nilai hilang],-0.57742571799999998,5
+110,1,Soil Moisture <= -1.4187323999999999,3.3640217799999999,3
+110,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.082818821099999995,0.48280236100000001,45
+110,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.082818821099999995 [termasuk nilai hilang],-0.90043073900000004,35
+111,1,Soil Moisture <= -1.4187323999999999,3.3261766399999999,3
+111,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.18521891500000001,73
+111,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.3389446700000001,9
+112,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.102820605,0.0062340954300000003,45
+112,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.102820605 [termasuk nilai hilang],-0.243033886,40
+112,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.7376959300000001,3
+112,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.65852850699999999,4
+113,1,Soil Moisture <= -1.36950123,2.95393229,3
+113,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.059765625699999998,70
+113,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.50701058,10
+114,1,Soil Moisture <= -1.4187323999999999,3.24614739,3
+114,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.015643555699999999,0.54278284300000001,42
+114,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.015643555699999999 [termasuk nilai hilang],-0.45229423000000002,40
+115,1,Soil Moisture <= -1.4187323999999999,3.2096281100000001,3
+115,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.53557688000000003,35
+115,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.68465399699999996,48
+116,3,Temperature <= 1.51768196 AND Usia Tanam <= -1.08512461,-0.238700405,9
+116,4,Temperature <= 1.51768196 AND Usia Tanam > -1.08512461 [termasuk nilai hilang],0.087425753499999995,68
+116,2,Temperature > 1.51768196 [termasuk nilai hilang],-0.72088921100000003,5
+117,1,Soil Moisture <= -1.36950123,3.30412507,3
+117,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,0.36676406900000003,51
+117,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-0.82868790599999997,35
+118,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.224614069,-0.123613082,59
+118,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.224614069 [termasuk nilai hilang],0.29334849099999999,26
+118,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.6946485,5
+119,3,Soil Moisture <= -0.72949582300000004 AND Temperature <= 0.52985334399999995,0.65115714099999999,11
+119,4,Soil Moisture <= -0.72949582300000004 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],3.0442013700000001,3
+119,5,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.026090443099999999,59
+119,6,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.3268708,9
+120,3,Soil Moisture <= 1.19052052 AND Soil Moisture <= -0.18795271199999999,0.57694929800000005,32
+120,4,Soil Moisture <= 1.19052052 AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.211883083,41
+120,2,Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.3194840000000001,11
+121,1,Soil Moisture <= -1.4187323999999999,3.09964013,3
+121,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.143995121,71
+121,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.1631101399999999,9
+122,3,Soil Moisture <= 1.19052052 AND Soil Moisture <= -0.0402591489,0.45682340900000001,37
+122,4,Soil Moisture <= 1.19052052 AND Soil Moisture > -0.0402591489 [termasuk nilai hilang],-0.16285923099999999,38
+122,2,Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.33376038,11
+123,3,Soil Moisture <= 1.19052052 AND Soil Moisture <= -0.21256831300000001,0.48384428000000002,35
+123,4,Soil Moisture <= 1.19052052 AND Soil Moisture > -0.21256831300000001 [termasuk nilai hilang],-0.14528617299999999,40
+123,2,Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.1694549299999999,10
+124,3,Temperature <= 1.6235207300000001 AND Temperature <= 1.1296063700000001,0.125678807,69
+124,4,Temperature <= 1.6235207300000001 AND Temperature > 1.1296063700000001 [termasuk nilai hilang],-0.31461620299999998,9
+124,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.7818952800000001,5
+125,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.063152000299999997,61
+125,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.21106256500000001,23
+125,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.5741190899999999,3
+125,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.36302953999999998,3
+126,1,Soil Moisture <= -1.4187323999999999,3.0374634299999999,3
+126,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.155607626,75
+126,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.23165166,11
+127,1,Soil Moisture <= -1.29565442,2.4359946300000002,5
+127,3,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.038796257200000003,68
+127,4,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.24922669,11
+128,1,Soil Moisture <= -1.3202700599999999,3.2053356200000001,3
+128,3,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.12888438999999999,69
+128,4,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.1432402100000001,11
+129,1,Soil Moisture <= -1.4187323999999999,2.9398271999999999,3
+129,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.47166243200000002,37
+129,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.47648268900000001,52
+130,1,Soil Moisture <= -1.36950123,3.0664582299999998,3
+130,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.102754109,78
+130,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.21134377,13
+131,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.088061988399999999,69
+131,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.25776460800000001,21
+131,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.7370237100000001,5
+132,1,Soil Moisture <= -1.4187323999999999,2.8663790200000001,3
+132,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.11281999199999999,75
+132,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.1405413200000001,12
+133,1,Soil Moisture <= -1.4187323999999999,2.8341319600000001,3
+133,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.19052052,0.106675558,76
+133,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.1487443399999999,12
+134,3,Soil Moisture <= 1.19052052 AND Soil Moisture <= -0.0402591489,0.39841073799999999,43
+134,4,Soil Moisture <= 1.19052052 AND Soil Moisture > -0.0402591489 [termasuk nilai hilang],-0.17398965399999999,34
+134,2,Soil Moisture > 1.19052052 [termasuk nilai hilang],-1.0787521600000001,12
+135,1,Soil Moisture <= -1.4187323999999999,2.7977659699999999,3
+135,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.032806687100000002,69
+135,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-1.1244382900000001,10
+136,3,Usia Tanam <= 0.81399649399999996 AND Temperature <= -0.28157731899999999,0.092711970199999993,33
+136,4,Usia Tanam <= 0.81399649399999996 AND Temperature > -0.28157731899999999 [termasuk nilai hilang],-0.25124695899999999,45
+136,5,Usia Tanam > 0.81399649399999996 [termasuk nilai hilang] AND Usia Tanam <= 2.25470901,-0.76016408199999996,8
+136,6,Usia Tanam > 0.81399649399999996 [termasuk nilai hilang] AND Usia Tanam > 2.25470901 [termasuk nilai hilang],-0.045599639400000003,3
+137,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.159127131,-0.143720403,47
+137,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.159127131 [termasuk nilai hilang],0.031802009800000003,31
+137,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.4357728999999999,3
+137,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.60627406800000005,3
+138,1,Soil Moisture <= -1.4187323999999999,2.7602503299999999,3
+138,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.132050008,0.28417336900000001,43
+138,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.132050008 [termasuk nilai hilang],-0.50969690099999998,37
+139,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -1.08512461,-0.213109821,9
+139,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -1.08512461 [termasuk nilai hilang],0.0068998602199999998,73
+139,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.3958878499999998,3
+139,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.31059935700000002,3
+140,1,Soil Moisture <= -1.4187323999999999,2.7201612000000002,3
+140,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.047812040899999998,78
+140,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-1.1488114599999999,11
+141,3,Temperature <= 1.6235207300000001 AND Temperature <= -1.65748143,-0.216600657,4
+141,4,Temperature <= 1.6235207300000001 AND Temperature > -1.65748143 [termasuk nilai hilang],0.018495542899999998,81
+141,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.35837531,3
+141,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.49710497300000001,4
+142,3,Soil Moisture <= 0.50128394399999998 AND Soil Moisture <= -0.311030686,0.420231193,29
+142,4,Soil Moisture <= 0.50128394399999998 AND Soil Moisture > -0.311030686 [termasuk nilai hilang],-0.047822814399999997,29
+142,5,Soil Moisture > 0.50128394399999998 [termasuk nilai hilang] AND Soil Moisture <= 0.77205544699999995,-0.27245211600000002,8
+142,6,Soil Moisture > 0.50128394399999998 [termasuk nilai hilang] AND Soil Moisture > 0.77205544699999995 [termasuk nilai hilang],-0.96862804899999999,19
+143,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.0205342323,56
+143,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.23102234299999999,19
+143,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.3288710099999999,3
+143,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.28092515499999998,3
+144,1,Soil Moisture <= -1.4187323999999999,2.66790533,3
+144,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.30435916800000001,0.24458238500000001,47
+144,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.30435916800000001 [termasuk nilai hilang],-0.61279159800000005,28
+145,1,Soil Moisture <= -1.3202700599999999,2.9470260100000001,3
+145,3,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.40086975699999999,29
+145,4,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.40760517099999999,52
+146,1,Soil Moisture <= -1.4187323999999999,2.60473752,3
+146,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.087673209599999996,82
+146,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-1.0068419,9
+147,1,Soil Moisture <= -1.4187323999999999,2.5754342100000001,3
+147,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.104694352,81
+147,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-1.0693384399999999,10
+148,1,Soil Moisture <= -1.29565442,2.31227779,4
+148,3,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Soil Moisture <= 0.132050008,0.25066360799999998,46
+148,4,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Soil Moisture > 0.132050008 [termasuk nilai hilang],-0.48780378699999999,39
+149,1,Soil Moisture <= -1.4187323999999999,2.5204477299999999,3
+149,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.21256831300000001,0.34812071900000002,35
+149,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.21256831300000001 [termasuk nilai hilang],-0.38328832400000001,59
+150,1,Soil Moisture <= -1.4187323999999999,2.4920926099999998,3
+150,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.089669860899999995,67
+150,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.96684229399999999,9
+151,1,Soil Moisture <= -1.36950123,2.720227,3
+151,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= -0.21256831300000001,0.37397274400000002,33
+151,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > -0.21256831300000001 [termasuk nilai hilang],-0.413312495,46
+152,3,Temperature <= 1.1296063700000001 AND Usia Tanam <= 0.224614069,-0.0146243842,51
+152,4,Temperature <= 1.1296063700000001 AND Usia Tanam > 0.224614069 [termasuk nilai hilang],0.21556381899999999,25
+152,5,Temperature > 1.1296063700000001 [termasuk nilai hilang] AND Usia Tanam <= -0.102820605,-0.067558780299999996,5
+152,6,Temperature > 1.1296063700000001 [termasuk nilai hilang] AND Usia Tanam > -0.102820605 [termasuk nilai hilang],-0.62996304000000003,9
+153,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.16057190299999999,27
+153,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.0593146347,55
+153,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.4214845899999999,5
+154,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -1.36950123,-0.11536674199999999,3
+154,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.36673486199999999,33
+154,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,-0.18495202099999999,40
+154,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.78043258199999999,8
+155,3,Soil Moisture <= 1.19052052 AND Soil Moisture <= -0.237183914,0.32504427400000002,31
+155,4,Soil Moisture <= 1.19052052 AND Soil Moisture > -0.237183914 [termasuk nilai hilang],-0.16521602899999999,42
+155,2,Soil Moisture > 1.19052052 [termasuk nilai hilang],-0.967055738,9
+156,1,Soil Moisture <= -1.36950123,2.2591803100000001,3
+156,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.2151361700000001,0.076245605899999999,72
+156,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.2151361700000001 [termasuk nilai hilang],-0.89481204700000005,10
+157,1,Soil Moisture <= -1.4187323999999999,2.4023375499999999,3
+157,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.74743986100000004,0.106142759,63
+157,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.74743986100000004 [termasuk nilai hilang],-0.71302223200000003,19
+158,1,Soil Moisture <= -1.4187323999999999,2.37531114,3
+158,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.30210322099999998,36
+158,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.35956010199999999,50
+159,1,Soil Moisture <= -1.4187323999999999,2.34858894,3
+159,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.064157798899999993,77
+159,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.91673249000000001,11
+160,1,Soil Moisture <= -1.36950123,2.6032893700000002,3
+160,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 0.132050008,0.30322948100000002,40
+160,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 0.132050008 [termasuk nilai hilang],-0.33193376699999999,41
+161,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.224614069,-0.15156903899999999,56
+161,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.224614069 [termasuk nilai hilang],0.21498161599999999,25
+161,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.1570496600000002,3
+161,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.41370314400000002,4
+162,3,Usia Tanam <= 1.99276125 AND Usia Tanam <= -0.49574220200000002,-0.21195192600000001,31
+162,4,Usia Tanam <= 1.99276125 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.046250659999999999,48
+162,5,Usia Tanam > 1.99276125 [termasuk nilai hilang] AND Temperature <= 1.79991865,1.8242660799999999,5
+162,6,Usia Tanam > 1.99276125 [termasuk nilai hilang] AND Temperature > 1.79991865 [termasuk nilai hilang],-0.40818712099999999,4
+163,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.88866382799999999,0.078991800500000001,13
+163,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.88866382799999999 [termasuk nilai hilang],-0.14024531800000001,71
+163,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,2.1198956999999998,3
+163,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.40274468099999999,4
+164,1,Soil Moisture <= -1.36950123,2.1293365999999998,3
+164,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.01821136,0.17603248399999999,70
+164,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.01821136 [termasuk nilai hilang],-0.585172951,11
+165,1,Soil Moisture <= -1.4187323999999999,2.23999214,3
+165,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.29165485499999999,36
+165,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.45075503,47
+166,3,Soil Moisture <= 1.2889829900000001 AND Soil Moisture <= -0.360261887,0.23796600100000001,27
+166,4,Soil Moisture <= 1.2889829900000001 AND Soil Moisture > -0.360261887 [termasuk nilai hilang],-0.075874336099999995,48
+166,2,Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.88171380799999999,10
+167,1,Soil Moisture <= -1.4187323999999999,2.21211505,3
+167,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.079893410200000001,76
+167,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.80133849400000001,10
+168,3,Soil Moisture <= -1.04949856 AND Temperature <= 0.14177779900000001,0.37935552,5
+168,4,Soil Moisture <= -1.04949856 AND Temperature > 0.14177779900000001 [termasuk nilai hilang],2.6695962,3
+168,5,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.0197499376,64
+168,6,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.86654901500000003,9
+169,1,Soil Moisture <= -1.4187323999999999,2.16578436,3
+169,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.311842799,30
+169,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.41631031000000002,52
+170,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.82317686099999998,-0.21022580599999999,18
+170,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.82317686099999998 [termasuk nilai hilang],0.083729893,59
+170,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.44854689,5
+171,3,Soil Moisture <= 0.50128394399999998 AND Soil Moisture <= -1.36950123,-0.32333609499999999,3
+171,4,Soil Moisture <= 0.50128394399999998 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.108046092,52
+171,5,Soil Moisture > 0.50128394399999998 [termasuk nilai hilang] AND Soil Moisture <= 0.77205544699999995,-0.19251890499999999,10
+171,6,Soil Moisture > 0.50128394399999998 [termasuk nilai hilang] AND Soil Moisture > 0.77205544699999995 [termasuk nilai hilang],-0.62207376999999997,19
+172,3,Soil Moisture <= -0.72949582300000004 AND Temperature <= 0.52985334399999995,0.29286229600000002,9
+172,4,Soil Moisture <= -0.72949582300000004 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],2.3427429200000001,4
+172,5,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture <= 0.74743986100000004,0.027058906899999999,54
+172,6,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture > 0.74743986100000004 [termasuk nilai hilang],-0.68879485100000004,21
+173,3,Soil Moisture <= -0.18795271199999999 AND Soil Moisture <= -1.36950123,-0.33068001299999999,3
+173,4,Soil Moisture <= -0.18795271199999999 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.22330278200000001,33
+173,5,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture <= 0.77205544699999995,-0.15727607900000001,34
+173,6,Soil Moisture > -0.18795271199999999 [termasuk nilai hilang] AND Soil Moisture > 0.77205544699999995 [termasuk nilai hilang],-0.52916479100000002,16
+174,1,Soil Moisture <= -1.2464232399999999,2.42220426,3
+174,3,Soil Moisture > -1.2464232399999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2151361700000001,0.0401290469,70
+174,4,Soil Moisture > -1.2464232399999999 [termasuk nilai hilang] AND Soil Moisture > 1.2151361700000001 [termasuk nilai hilang],-0.69875395299999998,10
+175,1,Soil Moisture <= -1.4187323999999999,2.0979013399999999,3
+175,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.74743986100000004,0.056085128300000002,64
+175,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.74743986100000004 [termasuk nilai hilang],-0.62377357499999997,17
+176,3,Soil Moisture <= 1.2889829900000001 AND Soil Moisture <= -0.360261887,0.22795495399999999,31
+176,4,Soil Moisture <= 1.2889829900000001 AND Soil Moisture > -0.360261887 [termasuk nilai hilang],-0.066762372900000005,50
+176,2,Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.67585462299999999,8
+177,1,Soil Moisture <= -1.4187323999999999,2.0717353799999998,3
+177,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.080392524600000001,72
+177,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.67036074400000001,9
+178,1,Soil Moisture <= -1.4187323999999999,2.0484285400000002,3
+178,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.2889829900000001,0.059768565000000003,74
+178,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.75632661599999995,9
+179,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.00079480669199999995,62
+179,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.20656712399999999,17
+179,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.4180746099999999,5
+180,3,Soil Moisture <= 1.2889829900000001 AND Temperature <= 1.1296063700000001,0.075228072699999995,67
+180,4,Soil Moisture <= 1.2889829900000001 AND Temperature > 1.1296063700000001 [termasuk nilai hilang],-0.28680610699999998,12
+180,2,Soil Moisture > 1.2889829900000001 [termasuk nilai hilang],-0.65759789899999999,9
+181,1,Soil Moisture <= -1.36950123,2.34702659,3
+181,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.3135985100000001,0.083518140000000005,71
+181,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.3135985100000001 [termasuk nilai hilang],-0.72282248699999996,8
+182,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.12522433699999999,27
+182,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.086618162700000001,55
+182,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.9414242500000001,3
+182,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.35466602400000002,4
+183,3,Soil Moisture <= 1.2151361700000001 AND Soil Moisture <= -1.36950123,-0.43001264300000003,3
+183,4,Soil Moisture <= 1.2151361700000001 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.153789073,69
+183,2,Soil Moisture > 1.2151361700000001 [termasuk nilai hilang],-0.68335366200000003,9
+184,1,Soil Moisture <= -1.4187323999999999,1.99264657,3
+184,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.3135985100000001,0.056725114600000001,70
+184,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.3135985100000001 [termasuk nilai hilang],-0.67449486299999994,9
+185,1,Soil Moisture <= -1.36950123,2.3031666300000002,3
+185,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= -0.237183914,0.22069613599999999,26
+185,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > -0.237183914 [termasuk nilai hilang],-0.23642315,51
+186,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.20650283999999999,30
+186,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.032078225199999998,57
+186,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.9035664800000001,3
+186,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.37515062100000002,3
+187,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.113317527,25
+187,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.087779194099999999,50
+187,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.8821513700000001,3
+187,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.332867146,4
+188,1,Soil Moisture <= -1.4187323999999999,1.93087184,3
+188,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,0.12844639999999999,58
+188,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-0.50221711400000002,29
+189,3,Temperature <= 1.6235207300000001 AND Temperature <= -0.45797526799999999,0.011520098899999999,31
+189,4,Temperature <= 1.6235207300000001 AND Temperature > -0.45797526799999999 [termasuk nilai hilang],-0.20526693800000001,50
+189,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.3454189299999999,5
+190,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.212336987,0.0503685065,50
+190,4,Temperature <= 1.6235207300000001 AND Temperature > 0.212336987 [termasuk nilai hilang],-0.17540149399999999,28
+190,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.3161453000000001,5
+191,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.82317686099999998,-0.218163416,18
+191,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.82317686099999998 [termasuk nilai hilang],0.028953783199999999,62
+191,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.8228308,3
+191,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.359322429,4
+192,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.159447119,32
+192,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.088773406999999999,49
+192,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.8023240599999999,3
+192,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.387435645,3
+193,1,Soil Moisture <= -1.4187323999999999,1.8885577899999999,3
+193,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,0.135027543,57
+193,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-0.53979998799999995,31
+194,3,Temperature <= 1.51768196 AND Soil Moisture <= 0.132050008,0.169431478,43
+194,4,Temperature <= 1.51768196 AND Soil Moisture > 0.132050008 [termasuk nilai hilang],-0.197852895,35
+194,2,Temperature > 1.51768196 [termasuk nilai hilang],-0.64635974200000001,6
+195,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.028153261200000002,-0.130605042,45
+195,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.028153261200000002 [termasuk nilai hilang],0.041925914600000003,36
+195,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.7812247299999999,3
+195,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.36089775000000002,3
+196,3,Temperature <= 1.51768196 AND Usia Tanam <= -0.82317686099999998,-0.28097751700000001,16
+196,4,Temperature <= 1.51768196 AND Usia Tanam > -0.82317686099999998 [termasuk nilai hilang],0.0310795382,60
+196,2,Temperature > 1.51768196 [termasuk nilai hilang],1.5212894699999999,5
+197,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.148191407,31
+197,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.0208560694,54
+197,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 2.2938330200000001,1.7468519199999999,3
+197,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 2.2938330200000001 [termasuk nilai hilang],-0.20892654399999999,3
+198,1,Soil Moisture <= -1.36950123,2.1954526900000002,3
+198,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,0.045622494100000001,75
+198,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.67164564100000002,7
+199,3,Temperature <= 1.51768196 AND Usia Tanam <= -0.43025529400000001,-0.17582579000000001,28
+199,4,Temperature <= 1.51768196 AND Usia Tanam > -0.43025529400000001 [termasuk nilai hilang],0.058086872099999999,49
+199,5,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature <= 2.2938330200000001,1.7213146699999999,3
+199,6,Temperature > 1.51768196 [termasuk nilai hilang] AND Temperature > 2.2938330200000001 [termasuk nilai hilang],-0.20439966000000001,3
+200,3,Temperature <= 1.51768196 AND Soil Moisture <= -1.36950123,-0.512701929,3
+200,4,Temperature <= 1.51768196 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.047863163100000002,76
+200,2,Temperature > 1.51768196 [termasuk nilai hilang],-0.728109479,7
+201,3,Temperature <= 1.6235207300000001 AND Temperature <= 0.52985334399999995,0.045736260700000003,63
+201,4,Temperature <= 1.6235207300000001 AND Temperature > 0.52985334399999995 [termasuk nilai hilang],-0.16204159000000001,22
+201,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.22668099,5
+202,1,Soil Moisture <= -1.4187323999999999,1.82297647,3
+202,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.6235207300000001,0.0184888616,76
+202,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.6235207300000001 [termasuk nilai hilang],-0.64098650199999996,5
+203,1,Soil Moisture <= -1.3202700599999999,1.8949703,3
+203,3,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Temperature <= 1.6235207300000001,0.0420217887,78
+203,4,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Temperature > 1.6235207300000001 [termasuk nilai hilang],-0.752480924,5
+204,1,Soil Moisture <= -1.4187323999999999,1.7811495100000001,3
+204,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,0.059402082100000003,79
+204,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.69593083899999997,8
+205,1,Soil Moisture <= -1.4187323999999999,1.76111174,3
+205,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,0.146850482,50
+205,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-0.49233031300000002,29
+206,3,Soil Moisture <= -1.04949856 AND Usia Tanam <= -0.62671607699999998,0.26607319699999998,4
+206,4,Soil Moisture <= -1.04949856 AND Usia Tanam > -0.62671607699999998 [termasuk nilai hilang],2.2973001000000002,3
+206,5,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture <= 1.38744533,-0.0067725768299999999,73
+206,6,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture > 1.38744533 [termasuk nilai hilang],-0.62121033699999995,7
+207,3,Temperature <= 1.51768196 AND Usia Tanam <= -0.49574220200000002,-0.14296299200000001,29
+207,4,Temperature <= 1.51768196 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.10117250699999999,52
+207,2,Temperature > 1.51768196 [termasuk nilai hilang],-0.466246724,7
+208,1,Soil Moisture <= -1.4187323999999999,1.7249768999999999,3
+208,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.45872425999999999,0.22590027700000001,21
+208,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.45872425999999999 [termasuk nilai hilang],-0.205494553,55
+209,1,Soil Moisture <= -1.4187323999999999,1.7055708199999999,3
+209,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.6235207300000001,0.070628389700000002,72
+209,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.6235207300000001 [termasuk nilai hilang],-0.66847562800000004,6
+210,1,Soil Moisture <= -1.4187323999999999,1.68638325,3
+210,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,0.0043797735099999997,80
+210,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.66302937299999998,7
+211,3,Soil Moisture <= 1.3135985100000001 AND Soil Moisture <= -1.2464232399999999,-0.47492101799999997,5
+211,4,Soil Moisture <= 1.3135985100000001 AND Soil Moisture > -1.2464232399999999 [termasuk nilai hilang],0.067025706199999993,66
+211,2,Soil Moisture > 1.3135985100000001 [termasuk nilai hilang],-0.49468499399999999,7
+212,1,Soil Moisture <= -1.4187323999999999,1.67275405,3
+212,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Usia Tanam <= 0.81399649399999996,0.077120691500000005,71
+212,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.38430571600000002,10
+213,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.43025529400000001,-0.15910088999999999,32
+213,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.43025529400000001 [termasuk nilai hilang],0.10694643099999999,49
+213,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],-0.64549303099999999,6
+214,1,Soil Moisture <= -1.36950123,2.04404831,3
+214,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.3135985100000001,0.064457900799999995,74
+214,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.3135985100000001 [termasuk nilai hilang],-0.495767087,7
+215,1,Soil Moisture <= -1.4187323999999999,1.63355637,3
+215,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.311030686,0.22815924900000001,27
+215,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.311030686 [termasuk nilai hilang],-0.20835320700000001,62
+216,3,Temperature <= 1.6235207300000001 AND Temperature <= -0.56381404400000001,0.01436105,30
+216,4,Temperature <= 1.6235207300000001 AND Temperature > -0.56381404400000001 [termasuk nilai hilang],-0.176207259,51
+216,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.64502573,3
+216,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.288126677,4
+217,1,Soil Moisture <= -1.4187323999999999,1.6103317699999999,3
+217,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,0.053852412799999999,83
+217,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.55972898000000004,7
+218,1,Soil Moisture <= -1.36950123,1.6063987,3
+218,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.3135985100000001,0.090697929299999994,76
+218,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.3135985100000001 [termasuk nilai hilang],-0.49435243000000001,9
+219,1,Soil Moisture <= -1.4187323999999999,1.57414353,3
+219,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,0.028870446599999999,76
+219,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.54128247500000004,7
+220,1,Soil Moisture <= -1.3202700599999999,2.1011185600000002,3
+220,3,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Soil Moisture <= -0.18795271199999999,0.17780628800000001,34
+220,4,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Soil Moisture > -0.18795271199999999 [termasuk nilai hilang],-0.224250957,48
+221,3,Soil Moisture <= 0.50128394399999998 AND Soil Moisture <= -1.36950123,-0.72521644799999996,3
+221,4,Soil Moisture <= 0.50128394399999998 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.061348620800000003,52
+221,5,Soil Moisture > 0.50128394399999998 [termasuk nilai hilang] AND Temperature <= -0.91661000299999995,-0.075621612399999996,4
+221,6,Soil Moisture > 0.50128394399999998 [termasuk nilai hilang] AND Temperature > -0.91661000299999995 [termasuk nilai hilang],-0.45177307700000002,24
+222,1,Soil Moisture <= -1.4187323999999999,1.54095519,3
+222,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,-0.0152039798,81
+222,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.57117545599999997,8
+223,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.82317686099999998,-0.29291456900000001,15
+223,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.82317686099999998 [termasuk nilai hilang],0.041792184099999997,60
+223,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.14739287,5
+224,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.49574220200000002,-0.16682633799999999,29
+224,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.064218267800000006,54
+224,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.5832343099999999,3
+224,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.30804642999999998,3
+225,3,Temperature <= 1.51768196 AND Usia Tanam <= -0.49574220200000002,-0.14700391900000001,30
+225,4,Temperature <= 1.51768196 AND Usia Tanam > -0.49574220200000002 [termasuk nilai hilang],0.070432364900000002,48
+225,2,Temperature > 1.51768196 [termasuk nilai hilang],-0.42508932900000002,5
+226,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.81399649399999996,0.024404130900000001,77
+226,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.20417828900000001,7
+226,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.43326676,5
+227,1,Soil Moisture <= -1.36950123,-0.72534161799999997,3
+227,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Temperature <= 1.51768196,0.091334044899999994,76
+227,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-0.56959110499999999,7
+228,1,Soil Moisture <= -1.4187323999999999,1.52004659,3
+228,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.51768196,0.070854634,76
+228,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-0.55962341999999998,7
+229,1,Soil Moisture <= -1.4187323999999999,1.50294638,3
+229,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.51768196,0.023744681900000002,80
+229,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-0.70943015799999998,6
+230,1,Soil Moisture <= -1.36950123,1.5236581600000001,3
+230,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= 1.38744533,0.086048088999999994,79
+230,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > 1.38744533 [termasuk nilai hilang],-0.55663698900000003,7
+231,1,Soil Moisture <= -1.4187323999999999,1.46889699,3
+231,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= -0.38487747300000003,0.209025085,24
+231,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],-0.190630138,61
+232,1,Soil Moisture <= -1.36950123,1.4947162899999999,3
+232,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture <= -0.311030686,0.23704779100000001,27
+232,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Soil Moisture > -0.311030686 [termasuk nilai hilang],-0.200905114,60
+233,3,Temperature <= 1.6235207300000001 AND Soil Moisture <= -1.36950123,-0.78596556200000001,3
+233,4,Temperature <= 1.6235207300000001 AND Soil Moisture > -1.36950123 [termasuk nilai hilang],0.034490760400000001,69
+233,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.36891246,4
+234,1,Soil Moisture <= -1.4187323999999999,1.4363181599999999,3
+234,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.51768196,0.039925981300000003,80
+234,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-0.60875892600000003,8
+235,3,Soil Moisture <= -0.72949582300000004 AND Usia Tanam <= -0.168307543,-0.039232503600000003,9
+235,4,Soil Moisture <= -0.72949582300000004 AND Usia Tanam > -0.168307543 [termasuk nilai hilang],2.2734181900000001,3
+235,5,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture <= 0.50128394399999998,-0.029532631899999998,46
+235,6,Soil Moisture > -0.72949582300000004 [termasuk nilai hilang] AND Soil Moisture > 0.50128394399999998 [termasuk nilai hilang],-0.42425257,28
+236,3,Soil Moisture <= -1.04949856 AND Temperature <= 0.10649821199999999,0.31816080200000002,4
+236,4,Soil Moisture <= -1.04949856 AND Temperature > 0.10649821199999999 [termasuk nilai hilang],2.12282372,3
+236,5,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture <= -0.38487747300000003,0.19702678900000001,19
+236,6,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture > -0.38487747300000003 [termasuk nilai hilang],-0.169386595,61
+237,1,Soil Moisture <= -1.36950123,1.80929506,3
+237,3,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Usia Tanam <= 0.81399649399999996,0.060830131199999998,66
+237,4,Soil Moisture > -1.36950123 [termasuk nilai hilang] AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.52262568499999995,7
+238,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.81399649399999996,0.0428406447,75
+238,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.23521004600000001,6
+238,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.4967502399999999,3
+238,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.25727480600000002,4
+239,1,Soil Moisture <= -1.4187323999999999,1.36089587,3
+239,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture <= 1.46129215,-0.0041923383299999999,85
+239,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Soil Moisture > 1.46129215 [termasuk nilai hilang],-0.52830195400000002,8
+240,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.43025529400000001,-0.18103461000000001,33
+240,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.43025529400000001 [termasuk nilai hilang],0.080518297899999994,50
+240,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 2.2938330200000001,1.69182813,3
+240,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 2.2938330200000001 [termasuk nilai hilang],-0.130395129,3
+241,1,Soil Moisture <= -1.4187323999999999,1.33961833,3
+241,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.6235207300000001,0.0076258419999999999,79
+241,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.6235207300000001 [termasuk nilai hilang],-0.650917411,6
+242,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= -0.82317686099999998,-0.26082229600000001,18
+242,4,Temperature <= 1.6235207300000001 AND Usia Tanam > -0.82317686099999998 [termasuk nilai hilang],0.028382390699999999,61
+242,5,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature <= 1.87047791,1.45566499,3
+242,6,Temperature > 1.6235207300000001 [termasuk nilai hilang] AND Temperature > 1.87047791 [termasuk nilai hilang],-0.24595117599999999,4
+243,1,Soil Moisture <= -1.2464232399999999,-0.78994101299999997,4
+243,3,Soil Moisture > -1.2464232399999999 [termasuk nilai hilang] AND Soil Moisture <= -0.72949582300000004,0.43384137699999997,9
+243,4,Soil Moisture > -1.2464232399999999 [termasuk nilai hilang] AND Soil Moisture > -0.72949582300000004 [termasuk nilai hilang],-0.086551167100000007,66
+244,1,Soil Moisture <= -1.29565442,1.2569718400000001,4
+244,3,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Usia Tanam <= 0.81399649399999996,0.054202884399999998,68
+244,4,Soil Moisture > -1.29565442 [termasuk nilai hilang] AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.42620900299999998,11
+245,1,Soil Moisture <= -1.3202700599999999,1.96782327,3
+245,3,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Temperature <= 1.51768196,0.047418944499999997,73
+245,4,Soil Moisture > -1.3202700599999999 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-0.64109587700000004,7
+246,1,Soil Moisture <= -1.4187323999999999,1.29256821,3
+246,3,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature <= 1.51768196,-0.0081453444400000005,80
+246,4,Soil Moisture > -1.4187323999999999 [termasuk nilai hilang] AND Temperature > 1.51768196 [termasuk nilai hilang],-0.54974168499999998,7
+247,3,Soil Moisture <= -1.04949856 AND Temperature <= 0.14177779900000001,0.222420588,5
+247,4,Soil Moisture <= -1.04949856 AND Temperature > 0.14177779900000001 [termasuk nilai hilang],1.9632456300000001,3
+247,5,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture <= -0.311030686,0.14586107400000001,21
+247,6,Soil Moisture > -1.04949856 [termasuk nilai hilang] AND Soil Moisture > -0.311030686 [termasuk nilai hilang],-0.183693931,56
+248,1,Soil Moisture <= -1.2464232399999999,-1.0088046799999999,4
+248,3,Soil Moisture > -1.2464232399999999 [termasuk nilai hilang] AND Usia Tanam <= 0.81399649399999996,0.108298555,69
+248,4,Soil Moisture > -1.2464232399999999 [termasuk nilai hilang] AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.381251067,6
+249,3,Temperature <= 1.6235207300000001 AND Usia Tanam <= 0.81399649399999996,0.015814242900000001,71
+249,4,Temperature <= 1.6235207300000001 AND Usia Tanam > 0.81399649399999996 [termasuk nilai hilang],-0.26075547900000001,6
+249,2,Temperature > 1.6235207300000001 [termasuk nilai hilang],1.2456444499999999,5

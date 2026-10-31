@@ -1,4 +1,4 @@
-"""Create duplicate-safe 80/20 train-test partitions from cleaned data."""
+"""Create duplicate-safe 70/30 train-test partitions from cleaned data."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -16,6 +16,7 @@ FIGURES = PROJECT_ROOT / "outputs" / "figures"
 FEATURES = ["Soil Moisture", "Temperature", "Usia Tanam"]
 TARGET = "Volume Penyiraman"
 GROUP_COLUMNS = FEATURES + [TARGET]
+TEST_SIZE = 0.30
 
 # Allow direct execution from either repository root or src/.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -33,7 +34,7 @@ def run_split() -> tuple[int, int]:
 
     # Each identical (X, y) record tuple receives one group ID.
     groups = data.groupby(GROUP_COLUMNS, sort=False, dropna=False).ngroup()
-    splitter = GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=42)
+    splitter = GroupShuffleSplit(n_splits=1, test_size=TEST_SIZE, random_state=42)
     train_idx, test_idx = next(splitter.split(data[FEATURES], data[TARGET], groups=groups))
     train = data.iloc[train_idx].copy()
     test = data.iloc[test_idx].copy()
@@ -96,7 +97,8 @@ def run_split() -> tuple[int, int]:
     report_lines = [
         "# Laporan Train-Test Split", "",
         "**Sumber:** `data/processed/data_cleaned.csv`.",
-        "**Metode:** `GroupShuffleSplit(test_size=0.20, random_state=42)`; grup dibentuk dari seluruh empat kolom dataset.", "",
+        f"**Metode:** `GroupShuffleSplit(test_size={TEST_SIZE:.2f}, random_state=42)`; grup dibentuk dari seluruh empat kolom dataset untuk mencegah duplikasi identik berada pada kedua split.", "",
+        f"**Rasio sasaran:** 70% training dan 30% testing. Karena split menjaga grup duplikat tetap utuh, rasio aktual dihitung dari jumlah baris dan dapat sedikit berbeda dari rasio sasaran.", "",
         "## Hasil", "",
         f"- Baris sumber: **{len(data)}**.",
         f"- Training: **{len(train)}** baris ({len(train)/len(data):.2%}).",

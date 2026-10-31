@@ -4,11 +4,11 @@
 
 - Model tersimpan dan dapat dimuat sebagai `XGBRegressor`; versi library saat audit: XGBoost 3.4.1.
 - File prediksi dan metrik tersedia. Split dan scaler tersedia; audit ini tidak menulis ulang data tersebut.
-- Baris prediksi: **30**; actual pada seluruh baris cocok berurutan dengan `y_test`: **Ya**.
-- Prediksi ulang memakai model tersimpan berbeda maksimum **2.5390625e-05** dari nilai CSV; perbedaan kecil konsisten dengan pembulatan/serialisasi float.
-- Kolom residual tersimpan berbeda maksimum **2.5390625e-05** dari actual dikurangi prediksi CSV.
+- Baris prediksi: **45**; actual pada seluruh baris cocok berurutan dengan `y_test`: **Ya**.
+- Prediksi ulang memakai model tersimpan berbeda maksimum **2.890625e-05** dari nilai CSV; perbedaan kecil konsisten dengan pembulatan/serialisasi float.
+- Kolom residual tersimpan berbeda maksimum **2.890625e-05** dari actual dikurangi prediksi CSV.
 - Fitur model: `Soil Moisture`, `Temperature`, `Usia Tanam`; target tidak terdapat di input X.
-- Row alignment terhadap cleaned data dan scaler: max error X train **2.22e-16**, X test **2.22e-16**, y train **0**, y test **0**.
+- Row alignment terhadap cleaned data dan scaler: max error X train **4.44e-16**, X test **4.44e-16**, y train **0**, y test **0**.
 - Prediksi negatif tersimpan: **0**; nilai disajikan tanpa clipping.
 
 ## Parameter model tersimpan
@@ -17,24 +17,24 @@
 
 ## Verifikasi metrik testing
 
-Metrik dihitung ulang dari 30 baris pada `test_predictions.csv`; selisih terhadap `model_metrics.csv` dicatat di bawah. Semua nilai dalam satuan asli mL kecuali R2.
+Metrik dihitung ulang dari 45 baris pada `test_predictions.csv`; selisih terhadap `model_metrics.csv` dicatat di bawah. Semua nilai dalam satuan asli mL kecuali R2. Split sasaran adalah 70:30.
 
 | Metrik | XGB tersimpan | XGB hitung ulang | Selisih | Dummy tersimpan | Dummy hitung ulang | Selisih |
 |---|---:|---:|---:|---:|---:|---:|
-| MAE | 30.5320878601 | 30.5320878000 | 6.01e-08 | 169.3579234973 | 169.3579234973 | 0 |
-| RMSE | 49.5701316894 | 49.5701322966 | 6.07e-07 | 211.6088604434 | 211.6088604434 | 2.84e-14 |
-| R2 | 0.9405336386 | 0.9405336372 | 1.46e-09 | -0.0836746577 | -0.0836746577 | 4.16e-17 |
+| MAE | 35.1110719638 | 35.1110730444 | 1.08e-06 | 174.6282450675 | 174.6282450675 | 0 |
+| RMSE | 59.3881599054 | 59.3881607433 | 8.38e-07 | 209.6844808198 | 209.6844808198 | 0 |
+| R2 | 0.9165556045 | 0.9165556021 | 2.35e-09 | -0.0402315261 | -0.0402315261 | 6.25e-17 |
 
-Kinerja XGBoost lebih baik daripada baseline mean pada split testing: MAE turun **82.0%** dan RMSE turun **76.6%**. Nilai R2 testing XGBoost adalah **0.941**.
+Kinerja XGBoost lebih baik daripada baseline mean pada split testing: MAE turun **79.9%** dan RMSE turun **71.7%**. Nilai R2 testing XGBoost adalah **0.917**.
 
 ## Cross-validation GroupKFold
 
-Metrik CV yang tersimpan hanya berisi mean dan standar deviasi antar lima fold; skor MAE/RMSE/R2 per fold tidak tersimpan. Karena audit ini tidak melatih ulang fold model, skor tiap fold (termasuk fold 5) tidak dapat direkonstruksi secara sah. Grafik yang tersedia menampilkan ringkasan mean +/- SD, bukan skor per fold.
+Metrik CV yang tersimpan hanya berisi mean dan standar deviasi antar lima fold; skor MAE/RMSE/R2 per fold tidak tersimpan. Karena audit ini tidak melatih ulang fold model, skor per fold tidak dapat direkonstruksi secara sah. Grafik yang tersedia menampilkan ringkasan mean +/- SD, bukan skor per fold.
 
 | Model | MAE mean +/- SD | RMSE mean +/- SD | R2 mean +/- SD |
 |---|---:|---:|---:|
-| XGBoost | 33.793 +/- 21.351 | 71.666 +/- 72.759 | 0.850 +/- 0.209 |
-| DummyRegressor | 155.967 +/- 24.802 | 200.588 +/- 59.478 | -0.075 +/- 0.084 |
+| XGBoost | 35.225 +/- 16.568 | 77.136 +/- 70.028 | 0.836 +/- 0.179 |
+| DummyRegressor | 151.531 +/- 25.468 | 200.733 +/- 57.371 | -0.129 +/- 0.202 |
 
 ### Distribusi target per fold (tanpa melatih ulang)
 
@@ -42,23 +42,22 @@ Fold membership direkonstruksi deterministik dari cleaned data menggunakan Group
 
 | Fold | n | Mean (mL) | SD populasi (mL) | Min (mL) | Max (mL) | 1474.6 |
 |---:|---:|---:|---:|---:|---:|---:|
-| 1 | 25 | 288.800 | 176.469 | 4.600 | 574.600 | 0 |
-| 2 | 25 | 287.400 | 170.957 | 14.600 | 649.600 | 0 |
-| 3 | 24 | 300.642 | 170.006 | 19.600 | 609.600 | 0 |
-| 4 | 24 | 312.100 | 165.592 | 19.600 | 599.600 | 0 |
-| 5 | 24 | 427.100 | 277.541 | 24.600 | 1474.600 | 1 |
+| 1 | 22 | 240.055 | 148.162 | 4.600 | 534.600 | 0 |
+| 2 | 22 | 354.827 | 152.766 | 59.600 | 609.600 | 0 |
+| 3 | 21 | 317.933 | 184.960 | 14.600 | 764.600 | 0 |
+| 4 | 21 | 311.267 | 177.619 | 19.600 | 599.600 | 0 |
+| 5 | 21 | 388.410 | 290.184 | 79.600 | 1474.600 | 1 |
 
-Fold 5 berisi baris sumber **4, 10, 17, 24, 30, 38, 44, 50, 56, 63, 69, 76, 84, 91, 97, 104, 113, 120, 130, 135, 141, 153, 168, 172**; targetnya mean **427.100 mL**, SD **277.541 mL**, maksimum **1474.600 mL**, termasuk nilai 1474.6 pada baris sumber **153**. Fold 1-4 memiliki target maksimum antara **574.6** dan **649.6 mL**.
-- XGBoost CV RMSE memiliki SD antar-fold **72.759 mL** dan R2 SD **0.209**; ini menunjukkan variasi hasil CV yang cukup besar.
-- Penempatan 1474.6 di fold 5 dan distribusi target fold tersebut yang lebih lebar bertepatan dengan variasi CV. Ini merupakan indikasi kuat sebagai kontributor potensial, tetapi bukan bukti kausal karena skor per fold dan residual validasi tidak disimpan.
+Fold 5 berisi baris sumber **4, 11, 24, 36, 42, 49, 56, 63, 70, 78, 85, 95, 102, 109, 117, 125, 131, 139, 153, 157, 171**; targetnya mean **388.410 mL**, SD **290.184 mL**, maksimum **1474.600 mL**.
+- Ringkasan mean dan SD CV yang dilaporkan berasal dari artefak evaluasi model yang tersimpan; nilai tersebut tidak menyimpan skor individual per fold.
 - Baris dengan 1474.6 berada di training split (fold 5), bukan test split: `153`.
 
 ## Duplikasi dan kebocoran
 
-- Grup fold dibuat dari Soil Moisture, Temperature, Usia Tanam, dan Volume Penyiraman; lima fold berisi 25, 25, 24, 24, dan 24 baris. Grup exact duplikat lintas split train-test: **0**.
+- Grup fold dibuat dari Soil Moisture, Temperature, Usia Tanam, dan Volume Penyiraman; ukuran fold aktual: 22, 22, 21, 21, 21 baris. Grup exact duplikat lintas split train-test: **0**.
 - Rekonstruksi GroupKFold mempertahankan grup exact duplicate secara utuh pada fold yang sama.
 - X train/test berisi tepat tiga fitur yang diminta. Pengujian keselarasan terhadap cleaned data dan scaler berhasil dengan galat numerik maksimum di bawah 1e-10.
-- Metrik dihitung pada 30 target test yang sejajar; test tidak masuk ke training atau CV berdasarkan konfigurasi yang diaudit.
+- Metrik dihitung pada 45 target test yang sejajar; test tidak masuk ke training atau CV berdasarkan konfigurasi yang diaudit.
 
 ## Prediksi testing per baris
 
@@ -66,44 +65,59 @@ Residual = aktual - prediksi. Angka menampilkan nilai dari file prediksi yang di
 
 | No. | Aktual (mL) | Prediksi XGBoost (mL) | Residual (mL) | Prediksi Dummy (mL) |
 |---:|---:|---:|---:|---:|
-| 1 | 439.600000 | 451.380650 | -11.780646 | 322.632787 |
-| 2 | 424.600000 | 432.504000 | -7.903998 | 322.632787 |
-| 3 | 54.600000 | 80.928650 | -26.328650 | 322.632787 |
-| 4 | 39.600000 | 36.432934 | 3.167066 | 322.632787 |
-| 5 | 654.600000 | 795.639650 | -141.039648 | 322.632787 |
-| 6 | 554.600000 | 535.331240 | 19.268762 | 322.632787 |
-| 7 | 769.600000 | 796.676000 | -27.076025 | 322.632787 |
-| 8 | 689.600000 | 795.761540 | -106.161536 | 322.632787 |
-| 9 | 209.600000 | 208.486530 | 1.113474 | 322.632787 |
-| 10 | 429.600000 | 442.133450 | -12.533453 | 322.632787 |
-| 11 | 319.600000 | 330.647060 | -11.047064 | 322.632787 |
-| 12 | 664.600000 | 801.807800 | -137.207800 | 322.632787 |
-| 13 | 554.600000 | 535.333560 | 19.266443 | 322.632787 |
-| 14 | 379.600000 | 398.823730 | -19.223730 | 322.632787 |
-| 15 | 144.600000 | 188.732100 | -44.132101 | 322.632787 |
-| 16 | 204.600000 | 210.697780 | -6.097784 | 322.632787 |
-| 17 | 674.600000 | 797.774540 | -123.174536 | 322.632787 |
-| 18 | 284.600000 | 266.890530 | 17.709467 | 322.632787 |
-| 19 | 324.600000 | 311.887420 | 12.712579 | 322.632787 |
-| 20 | 334.600000 | 322.564300 | 12.035699 | 322.632787 |
-| 21 | 29.600000 | 42.688084 | -13.088084 | 322.632787 |
-| 22 | 344.600000 | 324.913360 | 19.686639 | 322.632787 |
-| 23 | 319.600000 | 304.201540 | 15.398462 | 322.632787 |
-| 24 | 414.600000 | 398.030880 | 16.569116 | 322.632787 |
-| 25 | 334.600000 | 317.363160 | 17.236841 | 322.632787 |
-| 26 | 229.600000 | 247.586230 | -17.986227 | 322.632787 |
-| 27 | 579.600000 | 552.167400 | 27.432581 | 322.632787 |
-| 28 | 54.600000 | 47.825836 | 6.774164 | 322.632787 |
-| 29 | 474.600000 | 495.249420 | -20.649420 | 322.632787 |
-| 30 | 509.600000 | 507.439360 | 2.160638 | 322.632787 |
+| 1 | 469.600000 | 453.634060 | 15.965936 | 322.029907 |
+| 2 | 439.600000 | 448.171050 | -8.571051 | 322.029907 |
+| 3 | 459.600000 | 453.889950 | 5.710046 | 322.029907 |
+| 4 | 354.600000 | 341.581450 | 13.018549 | 322.029907 |
+| 5 | 424.600000 | 429.572900 | -4.972906 | 322.029907 |
+| 6 | 289.600000 | 393.245330 | -103.645331 | 322.029907 |
+| 7 | 19.600000 | 154.239120 | -134.639120 | 322.029907 |
+| 8 | 54.600000 | 159.900070 | -105.300070 | 322.029907 |
+| 9 | 39.600000 | 49.167027 | -9.567027 | 322.029907 |
+| 10 | 34.600000 | 49.167027 | -14.567027 | 322.029907 |
+| 11 | 654.600000 | 802.162900 | -147.562903 | 322.029907 |
+| 12 | 499.600000 | 498.688100 | 0.911890 | 322.029907 |
+| 13 | 554.600000 | 527.761350 | 26.838647 | 322.029907 |
+| 14 | 769.600000 | 799.603400 | -30.003394 | 322.029907 |
+| 15 | 689.600000 | 799.196040 | -109.596045 | 322.029907 |
+| 16 | 499.600000 | 498.280760 | 1.319238 | 322.029907 |
+| 17 | 209.600000 | 205.463030 | 4.136972 | 322.029907 |
+| 18 | 19.600000 | 44.278070 | -24.678069 | 322.029907 |
+| 19 | 429.600000 | 439.154330 | -9.554327 | 322.029907 |
+| 20 | 494.600000 | 489.084350 | 5.515649 | 322.029907 |
+| 21 | 319.600000 | 323.186900 | -3.586890 | 322.029907 |
+| 22 | 664.600000 | 806.696500 | -142.096472 | 322.029907 |
+| 23 | 554.600000 | 537.892940 | 16.707056 | 322.029907 |
+| 24 | 619.600000 | 809.735050 | -190.135046 | 322.029907 |
+| 25 | 379.600000 | 396.160580 | -16.560583 | 322.029907 |
+| 26 | 144.600000 | 189.611330 | -45.011328 | 322.029907 |
+| 27 | 204.600000 | 207.456900 | -2.856894 | 322.029907 |
+| 28 | 674.600000 | 804.765600 | -130.165625 | 322.029907 |
+| 29 | 284.600000 | 280.448400 | 4.151605 | 322.029907 |
+| 30 | 324.600000 | 313.591160 | 11.008844 | 322.029907 |
+| 31 | 169.600000 | 184.445400 | -14.845404 | 322.029907 |
+| 32 | 519.600000 | 508.162500 | 11.437494 | 322.029907 |
+| 33 | 334.600000 | 327.043980 | 7.556024 | 322.029907 |
+| 34 | 29.600000 | 49.292763 | -19.692763 | 322.029907 |
+| 35 | 344.600000 | 329.566440 | 15.033563 | 322.029907 |
+| 36 | 319.600000 | 303.939330 | 15.660669 | 322.029907 |
+| 37 | 414.600000 | 396.187350 | 18.412653 | 322.029907 |
+| 38 | 334.600000 | 315.699520 | 18.900476 | 322.029907 |
+| 39 | 229.600000 | 241.208950 | -11.608954 | 322.029907 |
+| 40 | 579.600000 | 526.932100 | 52.667871 | 322.029907 |
+| 41 | 54.600000 | 56.725840 | -2.125842 | 322.029907 |
+| 42 | 404.600000 | 418.152620 | -13.552618 | 322.029907 |
+| 43 | 474.600000 | 494.748050 | -20.148047 | 322.029907 |
+| 44 | 509.600000 | 504.481700 | 5.118311 | 322.029907 |
+| 45 | 49.600000 | 64.483010 | -14.883009 | 322.029907 |
 
 ## Feature importance
 
 | Fitur | Importance |
 |---|---:|
-| Soil Moisture | 0.773743 |
-| Temperature | 0.137071 |
-| Usia Tanam | 0.089185 |
+| Soil Moisture | 0.734456 |
+| Temperature | 0.144574 |
+| Usia Tanam | 0.120970 |
 
 ## Grafik
 

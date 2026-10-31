@@ -1,11 +1,11 @@
-﻿# Perbandingan Aktual dan Prediksi
+# Perbandingan Aktual dan Prediksi
 
-Dari **30 sampel testing**, MAE sebesar **30.53 mL**, RMSE **49.57 mL**, dan R-squared **0.941**. Nilai R-squared menunjukkan prediksi mengikuti variasi volume aktual dengan baik pada sampel testing ini. Rata-rata selisih absolut prediksi dari aktual adalah sekitar 30.53 mL; RMSE yang lebih besar dari MAE mencerminkan pengaruh beberapa kesalahan yang lebih besar.
+Dataset memakai split sasaran training:testing **70:30**. Group split menghasilkan **107** baris training dan **45** testing dari 152 record.
 
-Metrik dihitung dari nilai yang tersimpan di `outputs/tables/test_predictions.csv`; seluruh **30** record disertakan. Tidak ada model yang dilatih ulang dan dataset tidak diubah.
+Pada data testing, MAE = **35.111 mL**, RMSE = **59.388 mL**, dan R-squared = **0.917**.
 
-- **MAE:** 30.532088 mL
-- **RMSE:** 49.570132 mL
-- **R-squared:** 0.940534
+Metrik dihitung dari prediksi XGBoost testing yang tersimpan dan disejajarkan dengan target `y_test`.
 
-Berkas perbandingan: `outputs/tables/actual_vs_predicted.xlsx` dan `outputs/tables/actual_vs_predicted.csv`. Grafik 300 DPI tersimpan di `outputs/figures/model_evaluation/actual_vs_predicted_line.png` dan `actual_vs_predicted_scatter.png`.
+Grafik aktual dan prediksi per sampel tersedia pada `outputs/figures/model_evaluation/actual_vs_predicted_training_by_sample.png` dan `actual_vs_predicted_testing_by_sample.png`. Scatter aktual vs prediksi tersedia pada file `actual_vs_predicted_training.png` dan `actual_vs_predicted_testing.png`.
+
+Tabel gabungan: `outputs/tables/complete_actual_vs_predicted.csv` dan `.xlsx`; workbook memuat ringkasan jumlah record. Tabel testing: `outputs/tables/actual_vs_predicted.csv` dan `.xlsx`.

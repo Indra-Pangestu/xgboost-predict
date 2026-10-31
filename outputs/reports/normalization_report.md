@@ -5,8 +5,8 @@
 
 ## Ukuran split
 
-- Training: **122** baris.
-- Testing: **30** baris.
+- Training: **107** baris.
+- Testing: **45** baris.
 
 ## Verifikasi statistik training
 
@@ -14,8 +14,8 @@ Rata-rata dan standar deviasi populasi (ddof=0) setelah normalisasi:
 
 | Fitur | Mean | Std deviasi |
 |---|---:|---:|
-| Soil Moisture | 0.000000000000 | 1.000000000000 |
-| Temperature | -0.000000000000 | 1.000000000000 |
+| Soil Moisture | -0.000000000000 | 1.000000000000 |
+| Temperature | 0.000000000000 | 1.000000000000 |
 | Usia Tanam | -0.000000000000 | 1.000000000000 |
 
 Mean mendekati 0 dan standar deviasi mendekati 1 untuk semua fitur training.

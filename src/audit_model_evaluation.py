@@ -19,6 +19,7 @@ REPORT=ROOT/"outputs"/"reports"/"model_evaluation.md"
 FEATURES=["Soil Moisture","Temperature","Usia Tanam"]
 TARGET="Volume Penyiraman"
 ALL_COLS=FEATURES+[TARGET]
+TEST_SIZE=0.30
 
 
 def metrics(y,p):
@@ -107,8 +108,8 @@ def run_audit():
     if type(model).__name__!="XGBRegressor": problems.append(f"Model class unexpected: {type(model).__name__}")
     if list(x_train.columns)!=FEATURES or list(x_test.columns)!=FEATURES: problems.append("X split feature columns do not exactly match expected features")
     if TARGET in x_train.columns or TARGET in x_test.columns: problems.append("Target leakage: target is present in an X split")
-    if not (len(x_train)==len(y_train)==122 and len(x_test)==len(y_test)==30): problems.append("Unexpected split dimensions or X/y length mismatch")
-    if len(pred)!=30: problems.append(f"Prediction count is {len(pred)}, expected 30")
+    if not (len(x_train)==len(y_train)==107 and len(x_test)==len(y_test)==45): problems.append("Unexpected 70:30 split dimensions or X/y length mismatch")
+    if len(pred)!=45: problems.append(f"Prediction count is {len(pred)}, expected 45")
     actual_align=len(pred)==len(y_test) and np.allclose(pred.Actual.to_numpy(),y_test.to_numpy(),rtol=0,atol=1e-10)
     if not actual_align: problems.append("Saved prediction actuals do not exactly align with y_test")
     if "Predicted_XGBoost" not in pred or "Residual_Actual_Minus_Predicted" not in pred: problems.append("Required prediction columns missing")
@@ -128,7 +129,7 @@ def run_audit():
 
     clean=pd.read_csv(CLEANED); scaler=joblib.load(ROOT/"models"/"scaler.joblib")
     groups=clean.groupby(ALL_COLS,sort=False,dropna=False).ngroup()
-    itr,ite=next(GroupShuffleSplit(n_splits=1,test_size=.2,random_state=42).split(clean[FEATURES],clean[TARGET],groups))
+    itr,ite=next(GroupShuffleSplit(n_splits=1,test_size=TEST_SIZE,random_state=42).split(clean[FEATURES],clean[TARGET],groups))
     scaled=scaler.transform(clean[FEATURES])
     align_train_x=float(np.max(np.abs(scaled[itr]-x_train[FEATURES].to_numpy())))
     align_test_x=float(np.max(np.abs(scaled[ite]-x_test[FEATURES].to_numpy())))
@@ -149,7 +150,7 @@ def run_audit():
         fold_rows.append({"fold":fold,"n":len(part),"mean":part[TARGET].mean(),"std":part[TARGET].std(ddof=0),"min":part[TARGET].min(),"max":part[TARGET].max(),"outlier_count":int(np.isclose(part[TARGET],1474.6,atol=1e-8).sum()),"source_rows":part.source_excel_row.astype(int).tolist()})
     fold_stats=pd.DataFrame(fold_rows)
     fold_sizes=fold_stats.n.tolist()
-    if fold_sizes!=[25,25,24,24,24]: problems.append(f"Reconstructed fold sizes differ from expected GroupKFold allocation: {fold_sizes}")
+    if sum(fold_sizes)!=len(train_records): problems.append(f"GroupKFold sizes do not cover training records: {fold_sizes}")
     cv_entries=metric_table[metric_table.Evaluation.eq("5-fold GroupKFold train CV")]
     per_fold_saved=bool(cv_entries.columns.isin([f"fold_{i}" for i in range(1,6)]).any()) or bool(cv_entries.Metric.astype(str).str.contains(r"fold\s*[1-5]",case=False).any())
     if not per_fold_saved: pass
@@ -176,7 +177,7 @@ def run_audit():
       "## Parameter model tersimpan", "",
       "`n_estimators="+str(params["n_estimators"])+"`, `max_depth="+str(params["max_depth"])+"`, `learning_rate="+str(params["learning_rate"])+"`, `subsample="+str(params["subsample"])+"`, `colsample_bytree="+str(params["colsample_bytree"])+"`, `min_child_weight="+str(params["min_child_weight"])+"`, `reg_lambda="+str(params["reg_lambda"])+"`, `objective="+str(params["objective"])+"`, `random_state="+str(params["random_state"])+"`.", "",
       "## Verifikasi metrik testing", "",
-      "Metrik dihitung ulang dari 30 baris pada `test_predictions.csv`; selisih terhadap `model_metrics.csv` dicatat di bawah. Semua nilai dalam satuan asli mL kecuali R2.", "",
+      f"Metrik dihitung ulang dari {len(pred)} baris pada `test_predictions.csv`; selisih terhadap `model_metrics.csv` dicatat di bawah. Semua nilai dalam satuan asli mL kecuali R2. Split sasaran adalah 70:30.", "",
       "| Metrik | XGB tersimpan | XGB hitung ulang | Selisih | Dummy tersimpan | Dummy hitung ulang | Selisih |",
       "|---|---:|---:|---:|---:|---:|---:|"]
     for key in ("MAE","RMSE","R2"):
@@ -184,7 +185,7 @@ def run_audit():
     lines += ["",
               "Kinerja XGBoost lebih baik daripada baseline mean pada split testing: MAE turun **"+f"{(1-xgb_test['MAE']/dummy_test['MAE'])*100:.1f}%"+"** dan RMSE turun **"+f"{(1-xgb_test['RMSE']/dummy_test['RMSE'])*100:.1f}%"+"**. Nilai R2 testing XGBoost adalah **"+f"{xgb_test['R2']:.3f}"+"**.", "",
               "## Cross-validation GroupKFold", "",
-              "Metrik CV yang tersimpan hanya berisi mean dan standar deviasi antar lima fold; skor MAE/RMSE/R2 per fold tidak tersimpan. Karena audit ini tidak melatih ulang fold model, skor tiap fold (termasuk fold 5) tidak dapat direkonstruksi secara sah. Grafik yang tersedia menampilkan ringkasan mean +/- SD, bukan skor per fold.", "",
+              "Metrik CV yang tersimpan hanya berisi mean dan standar deviasi antar lima fold; skor MAE/RMSE/R2 per fold tidak tersimpan. Karena audit ini tidak melatih ulang fold model, skor per fold tidak dapat direkonstruksi secara sah. Grafik yang tersedia menampilkan ringkasan mean +/- SD, bukan skor per fold.", "",
               "| Model | MAE mean +/- SD | RMSE mean +/- SD | R2 mean +/- SD |", "|---|---:|---:|---:|"]
     for name in ["XGBoost","DummyRegressor"]:
       a=xcv[name]
@@ -193,15 +194,14 @@ def run_audit():
               "Fold membership direkonstruksi deterministik dari cleaned data menggunakan GroupKFold(5) dan grup empat kolom. Ini memeriksa komposisi target, bukan menghitung skor model per fold.", "",
               "| Fold | n | Mean (mL) | SD populasi (mL) | Min (mL) | Max (mL) | 1474.6 |", "|---:|---:|---:|---:|---:|---:|---:|"]
     for _,r in fold_stats.iterrows(): lines.append(f"| {int(r.fold)} | {int(r.n)} | {r['mean']:.3f} | {r['std']:.3f} | {r['min']:.3f} | {r['max']:.3f} | {int(r.outlier_count)} |")
-    lines += ["", f"Fold 5 berisi baris sumber **{', '.join(map(str,c5.source_rows))}**; targetnya mean **{c5['mean']:.3f} mL**, SD **{c5['std']:.3f} mL**, maksimum **{c5['max']:.3f} mL**, termasuk nilai 1474.6 pada baris sumber **{', '.join(map(str,train_outlier_rows))}**. Fold 1-4 memiliki target maksimum antara **{fold_stats.iloc[:4]['max'].min():.1f}** dan **{fold_stats.iloc[:4]['max'].max():.1f} mL**.",
-              "- XGBoost CV RMSE memiliki SD antar-fold **72.759 mL** dan R2 SD **0.209**; ini menunjukkan variasi hasil CV yang cukup besar.",
-              "- Penempatan 1474.6 di fold 5 dan distribusi target fold tersebut yang lebih lebar bertepatan dengan variasi CV. Ini merupakan indikasi kuat sebagai kontributor potensial, tetapi bukan bukti kausal karena skor per fold dan residual validasi tidak disimpan.",
+    lines += ["", f"Fold 5 berisi baris sumber **{', '.join(map(str,c5.source_rows))}**; targetnya mean **{c5['mean']:.3f} mL**, SD **{c5['std']:.3f} mL**, maksimum **{c5['max']:.3f} mL**.",
+              "- Ringkasan mean dan SD CV yang dilaporkan berasal dari artefak evaluasi model yang tersimpan; nilai tersebut tidak menyimpan skor individual per fold.",
               "- Baris dengan 1474.6 berada di training split (fold 5), bukan test split: `"+(", ".join(map(str,train_outlier_rows)) or "tidak ditemukan")+"`.", "",
               "## Duplikasi dan kebocoran", "",
-      f"- Grup fold dibuat dari Soil Moisture, Temperature, Usia Tanam, dan Volume Penyiraman; lima fold berisi 25, 25, 24, 24, dan 24 baris. Grup exact duplikat lintas split train-test: **{split_group_overlap}**.",
+      f"- Grup fold dibuat dari Soil Moisture, Temperature, Usia Tanam, dan Volume Penyiraman; ukuran fold aktual: {', '.join(map(str,fold_sizes))} baris. Grup exact duplikat lintas split train-test: **{split_group_overlap}**.",
               "- Rekonstruksi GroupKFold mempertahankan grup exact duplicate secara utuh pada fold yang sama.",
               "- X train/test berisi tepat tiga fitur yang diminta. Pengujian keselarasan terhadap cleaned data dan scaler berhasil dengan galat numerik maksimum di bawah 1e-10.",
-              "- Metrik dihitung pada 30 target test yang sejajar; test tidak masuk ke training atau CV berdasarkan konfigurasi yang diaudit.", "",
+              f"- Metrik dihitung pada {len(y_test)} target test yang sejajar; test tidak masuk ke training atau CV berdasarkan konfigurasi yang diaudit.", "",
               "## Prediksi testing per baris", "",
               "Residual = aktual - prediksi. Angka menampilkan nilai dari file prediksi yang disimpan.", "",
               "| No. | Aktual (mL) | Prediksi XGBoost (mL) | Residual (mL) | Prediksi Dummy (mL) |", "|---:|---:|---:|---:|---:|"]
